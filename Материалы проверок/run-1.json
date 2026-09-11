@@ -1,0 +1,386 @@
+{
+  "run": 1,
+  "start": "2026-09-11T12:47:20.117Z",
+  "end": "2026-09-11T12:50:07.825Z",
+  "browser": "139.0.7258.5",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/139.0.0.0 Safari/537.36",
+  "out": [
+    {
+      "id": "01",
+      "at": "2026-09-11T12:47:20.117Z",
+      "url": "https://www.calculator.net/percent-calculator.html?cpar1=10&cpar2=200&cpar3=999&ctype=1&x=Calculate",
+      "text": "sign in\nhome / math / percentage calculator\nPercentage Calculator\n\nPlease provide any two values below and click the \"Calculate\" button to get the third value.\n\nResult: 20\n\n10% of 200 = 20\n\n\nSteps:\n10% of 200 = 0.1 × 200 = 20\n\n\n\n of    =   \n \n\n\nPercentage Calculator in Common Phrases\nwhat is  of \t  \n is what % of \t  \n is  of what\t  \n\n\nPercentage Difference Calculator\nValue 1\t\nValue 2\t\n \n\n\nPercenta",
+      "values": [
+        "10",
+        "200",
+        "999"
+      ],
+      "images": [
+        ".work/evidence/01-r1-result.png"
+      ]
+    },
+    {
+      "id": "02",
+      "at": "2026-09-11T12:47:21.437Z",
+      "url": "https://www.calculator.net/percent-calculator.html?cpar1=10&cpar2=200&cpar3=&ctype=1&x=Calculate",
+      "text": "sign in\nhome / math / percentage calculator\nPercentage Calculator\n\nPlease provide any two values below and click the \"Calculate\" button to get the third value.\n\nResult: 20\n\n10% of 200 = 20\n\n\nSteps:\n10% of 200 = 0.1 × 200 = 20\n\n\n\n of    =   \n \n\n\nPercentage Calculator in Common Phrases\nwhat is  of \t  \n is what % of \t  \n is  of what\t  \n\n\nPercentage Difference Calculator\nValue 1\t\nValue 2\t\n \n\n\nPercenta",
+      "values": [
+        "",
+        "",
+        ""
+      ],
+      "images": [
+        ".work/evidence/02-r1-cleared.png"
+      ]
+    },
+    {
+      "id": "03",
+      "at": "2026-09-11T12:47:22.207Z",
+      "url": "https://www.calculator.net/percent-calculator.html?cpar1=10&cpar2=200&cpar3=&ctype=1&x=Calculate",
+      "values": [
+        "",
+        ""
+      ],
+      "images": [
+        ".work/evidence/03-r1-before.png",
+        ".work/evidence/03-r1-after.png"
+      ]
+    },
+    {
+      "id": "04",
+      "at": "2026-09-11T12:47:22.683Z",
+      "url": "https://www.calculator.net/percent-calculator.html",
+      "mobile": {
+        "button": {
+          "x": 367.78125,
+          "y": 371.25,
+          "width": 137.140625,
+          "height": 40,
+          "top": 371.25,
+          "right": 504.921875,
+          "bottom": 411.25,
+          "left": 367.78125
+        },
+        "viewport": 375,
+        "docWidth": 375,
+        "bodyOverflow": "visible",
+        "form": "<form name=\"calc\" action=\"/percent-calculator.html#pctcommon\"><table class=\"panel\" style=\"margin-top:5px;\"><tbody><tr><td class=\"verybigtext\" nowrap=\"\">\n<input type=\"text\" name=\"c22par1\" value=\"\" class=\"innormal\">\nis what % of\n<input type=\"text\" name=\"c22par2\" value=\"\" class=\"inlong\">\n</td>\n<td align=\"center\"> &nbsp; <input name=\"ctype\" value=\"22\" type=\"hidden\">\n<input type=\"submit\" name=\"x\" value=\"Calculate\">\n</td></tr></tbody></table></form>"
+      },
+      "images": [
+        ".work/evidence/04-r1-mobile.png"
+      ]
+    },
+    {
+      "id": "05",
+      "at": "2026-09-11T12:47:23.675Z",
+      "url": "https://www.calculator.net/date-calculator.html",
+      "value": "2026",
+      "text": "sign in\nhome / other / date calculator\nDate Calculator\nDays Between Two Dates\n\nFind the number of years, months, weeks, and days between dates. Click \"Settings\" to define holidays.\n\nStart Date\t\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n\t\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n\t\t \n\nEnd Date\t\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n\t\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n\t\t \n\n \t\ninclude end day (add 1 day)\n\t  Settings\nAdd to or Subtract from a Date\nStart Date\t\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\n\t\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n\t\t \n\n \t\n+\n–\n\t\n years\n months\n weeks\n days\ncalculate in business days\n\n \t\n\nRelated\nTime Calculator | Age Calculator\n\n\n\nHistory of the Gregorian Calendar\n\nThe Gregorian calendar is the most prevalently used calendar today. Within this calendar, a standard year consists of 365 days with a leap day being introduced to the month of February during a leap year. The months of April, June, September, and November have 30 days, while the rest have 31 days except for February, which has 28 days in a standard year, and 29 in a leap year.\n\nThe Gregorian calendar is a reformed version of the Julian calendar, whic",
+      "images": [
+        ".work/evidence/05-r1-before.png",
+        ".work/evidence/05-r1-after.png"
+      ]
+    },
+    {
+      "id": "06",
+      "at": "2026-09-11T12:47:23.943Z",
+      "url": "https://www.calculator.net/percent-calculator.html",
+      "aria": "- table:\n  - rowgroup:\n    - row \"of =\":\n      - cell \"of =\":\n        - textbox\n        - text: of\n        - textbox\n        - text: =\n        - textbox\n    - row \"Calculate Clear\":\n      - cell \"Calculate Clear\":\n        - button \"Calculate\"\n        - button \"Clear\"",
+      "inputs": [
+        {
+          "id": "cpar1",
+          "labels": [],
+          "ariaLabel": null,
+          "labelledby": null,
+          "title": "",
+          "placeholder": ""
+        },
+        {
+          "id": "cpar2",
+          "labels": [],
+          "ariaLabel": null,
+          "labelledby": null,
+          "title": "",
+          "placeholder": ""
+        },
+        {
+          "id": "cpar3",
+          "labels": [],
+          "ariaLabel": null,
+          "labelledby": null,
+          "title": "",
+          "placeholder": ""
+        }
+      ],
+      "images": [
+        ".work/evidence/06-r1-fields.png"
+      ]
+    },
+    {
+      "id": "07",
+      "at": "2026-09-11T12:50:07.825Z",
+      "url": "https://www.calculator.net/time-calculator.html?tcexpression=1h+*+2&ctype=3&x=Calculate#expression",
+      "expression": "1h * 2",
+      "text": "\n\nUse this calculator to add or subtract two or more time values in the form of an expression. An acceptable input has d, h, m, and s following each value, where d means days, h means hours, m means minutes, and s means seconds. The only acceptable operators are + and -. \"1d 2h 3m 4s + 4h 5s - 2030s\" is an example of a valid expression.\n\nPlease provide something to calculate.\n\n\n \n\n\n\nRelated\nDate Calculator | Age Calculator\n\n\n\n\nLike other numbers, time can be added or subtracted. However, due to how time is defined, there exist differences in how calculations must be computed when compared to decimal numbers. The following table shows some com",
+      "images": [
+        ".work/evidence/07-r1-expression.png"
+      ]
+    },
+    {
+      "id": "08",
+      "at": "2026-09-11T12:47:25.569Z",
+      "url": "https://www.calculator.net/scientific-calculator.html",
+      "focus": {
+        "id": "calcSearchTerm",
+        "tag": "INPUT"
+      },
+      "aria": "- cell \"0 sin cos tan Deg Rad sin-1 cos-1 tan-1 π e xy x3 x2 ex 10x y√x 3√x √x ln log ( ) 1/x % n! 7 8 9 + Back 4 5 6 – Ans 1 2 3 × M+ 0 . EXP ÷ M- ± RND AC = MR\":\n  - text: 0 sin cos tan\n  - radio \"Deg\" [checked]\n  - text: Deg\n  - radio \"Rad\"\n  - text: Rad sin\n  - superscript: \"-1\"\n  - text: cos\n  - superscript: \"-1\"\n  - text: tan\n  - superscript: \"-1\"\n  - text: π e x\n  - superscript: \"y\"\n  - text: x\n  - superscript: \"3\"\n  - text: x\n  - superscript: \"2\"\n  - text: e\n  - superscript: x\n  - text: \"10\"\n  - superscript: x\n  - superscript: \"y\"\n  - text: √x\n  - superscript: \"3\"\n  - text: √x √x ln log ( ) 1/x % n! 7 8 9 + Back 4 5 6 – Ans 1 2 3 × M+ 0 . EXP ÷ M- ± RND AC = MR",
+      "keys": [
+        {
+          "text": "sin",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "cos",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "tan",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "sin-1",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "cos-1",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "tan-1",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "π",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "e",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "xy",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "x3",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "x2",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "ex",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "10x",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "y√x",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "3√x",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "√x",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "ln",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "log",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "(",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": ")",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "1/x",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "%",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "n!",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "7",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "8",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "9",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "+",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "Back",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "4",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "5",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "6",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "–",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "Ans",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "1",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "2",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "3",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "×",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "M+",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "0",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": ".",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "EXP",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "÷",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "M-",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "±",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "RND",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "AC",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "=",
+          "tabIndex": -1,
+          "role": null
+        },
+        {
+          "text": "MR",
+          "tabIndex": -1,
+          "role": null
+        }
+      ],
+      "images": [
+        ".work/evidence/08-r1-deg.png",
+        ".work/evidence/08-r1-tab.png"
+      ]
+    }
+  ]
+}
