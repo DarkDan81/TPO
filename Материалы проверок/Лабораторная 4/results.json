@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "field": "age",
+    "value": "1",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide an age between 2 and 120.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=1&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "01-age.png",
+    "date": "2026-09-25T11:21:39.086Z"
+  },
+  {
+    "id": 2,
+    "field": "age",
+    "value": "2",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nResult\nBMI = 20.1 kg/m2   (97%, Overweight)\n5%\n85%\n95%\nBMI = 20.1\nWeight-for-age percentile: 339%\nHeight-for-age percentile: 308%\nHealthy BMI range: 14.7 - 18.2 kg/m2\nHealthy weight for the height:\n47.6 kg - 59 kg\nLose 6.0 kg to reach a BMI of 18.2 kg/m2.\nPonderal Index: 11.1 kg/m3\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=2&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "02-age.png",
+    "date": "2026-09-25T11:21:41.735Z"
+  },
+  {
+    "id": 3,
+    "field": "age",
+    "value": "3",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nResult\nBMI = 20.1 kg/m2   (98%, Overweight)\n5%\n85%\n95%\nBMI = 20.1\nWeight-for-age percentile: 275%\nHeight-for-age percentile: 251%\nHealthy BMI range: 14.3 - 17.4 kg/m2\nHealthy weight for the height:\n46.3 kg - 56.4 kg\nLose 8.6 kg to reach a BMI of 17.4 kg/m2.\nPonderal Index: 11.1 kg/m3\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=3&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "03-age.png",
+    "date": "2026-09-25T11:21:43.644Z"
+  },
+  {
+    "id": 4,
+    "field": "age",
+    "value": "119",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nResult\nBMI = 20.1 kg/m2   (Normal)\n16\n17\n18.5\n25\n30\n35\n40\nUnderweight\nNormal\nOverweight\nObesity\nBMI = 20.1\nHealthy BMI range: 18.5 kg/m2 - 25 kg/m2\nHealthy weight for the height: 59.9 kg - 81 kg\nBMI Prime: 0.8\nPonderal Index: 11.1 kg/m3\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=119&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "04-age.png",
+    "date": "2026-09-25T11:21:45.963Z"
+  },
+  {
+    "id": 5,
+    "field": "age",
+    "value": "120",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nResult\nBMI = 20.1 kg/m2   (Normal)\n16\n17\n18.5\n25\n30\n35\n40\nUnderweight\nNormal\nOverweight\nObesity\nBMI = 20.1\nHealthy BMI range: 18.5 kg/m2 - 25 kg/m2\nHealthy weight for the height: 59.9 kg - 81 kg\nBMI Prime: 0.8\nPonderal Index: 11.1 kg/m3\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=120&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "05-age.png",
+    "date": "2026-09-25T11:21:47.979Z"
+  },
+  {
+    "id": 6,
+    "field": "age",
+    "value": "121",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide an age between 2 and 120.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=121&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "06-age.png",
+    "date": "2026-09-25T11:21:50.113Z"
+  },
+  {
+    "id": 7,
+    "field": "age",
+    "value": "",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide an age between 2 and 120.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "07-age.png",
+    "date": "2026-09-25T11:21:52.022Z"
+  },
+  {
+    "id": 8,
+    "field": "age",
+    "value": "abc",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide an age between 2 and 120.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=abc&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "08-age.png",
+    "date": "2026-09-25T11:21:53.683Z"
+  },
+  {
+    "id": 9,
+    "field": "height",
+    "value": "0",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide positive height value.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=0&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "09-height.png",
+    "date": "2026-09-25T11:21:55.328Z"
+  },
+  {
+    "id": 10,
+    "field": "height",
+    "value": "-1",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide positive height value.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=-1&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "10-height.png",
+    "date": "2026-09-25T11:21:56.986Z"
+  },
+  {
+    "id": 11,
+    "field": "height",
+    "value": "0.1",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nResult\nBMI = 65000000 kg/m2   (Obese Class III)\nHealthy BMI range: 18.5 kg/m2 - 25 kg/m2\nHealthy weight for the height: 0 kg - 0 kg\nLose 65.0 kg to reach a BMI of 25 kg/m2.\nBMI Prime: 2600000\nPonderal Index: 65000000000 kg/m3\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=0.1&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "11-height.png",
+    "date": "2026-09-25T11:21:58.676Z"
+  },
+  {
+    "id": 12,
+    "field": "height",
+    "value": "180",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nResult\nBMI = 20.1 kg/m2   (Normal)\n16\n17\n18.5\n25\n30\n35\n40\nUnderweight\nNormal\nOverweight\nObesity\nBMI = 20.1\nHealthy BMI range: 18.5 kg/m2 - 25 kg/m2\nHealthy weight for the height: 59.9 kg - 81 kg\nBMI Prime: 0.8\nPonderal Index: 11.1 kg/m3\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "12-height.png",
+    "date": "2026-09-25T11:22:01.289Z"
+  },
+  {
+    "id": 13,
+    "field": "height",
+    "value": "",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide positive height value.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "13-height.png",
+    "date": "2026-09-25T11:22:02.465Z"
+  },
+  {
+    "id": 14,
+    "field": "height",
+    "value": "abc",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide positive height value.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=abc&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "14-height.png",
+    "date": "2026-09-25T11:22:04.170Z"
+  },
+  {
+    "id": 15,
+    "field": "weight",
+    "value": "0",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide positive weight value.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=0&printit=0&ctype=metric&x=Calculate",
+    "image": "15-weight.png",
+    "date": "2026-09-25T11:22:05.813Z"
+  },
+  {
+    "id": 16,
+    "field": "weight",
+    "value": "-1",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide positive weight value.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=-1&printit=0&ctype=metric&x=Calculate",
+    "image": "16-weight.png",
+    "date": "2026-09-25T11:22:07.594Z"
+  },
+  {
+    "id": 17,
+    "field": "weight",
+    "value": "0.1",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nResult\nBMI = 0 kg/m2   (Severe thinness)\nHealthy BMI range: 18.5 kg/m2 - 25 kg/m2\nHealthy weight for the height: 59.9 kg - 81 kg\nGain 59.8 kg to reach a BMI of 18.5 kg/m2.\nBMI Prime: 0\nPonderal Index: 0 kg/m3\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=0.1&printit=0&ctype=metric&x=Calculate",
+    "image": "17-weight.png",
+    "date": "2026-09-25T11:22:09.038Z"
+  },
+  {
+    "id": 18,
+    "field": "weight",
+    "value": "65",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nResult\nBMI = 20.1 kg/m2   (Normal)\n16\n17\n18.5\n25\n30\n35\n40\nUnderweight\nNormal\nOverweight\nObesity\nBMI = 20.1\nHealthy BMI range: 18.5 kg/m2 - 25 kg/m2\nHealthy weight for the height: 59.9 kg - 81 kg\nBMI Prime: 0.8\nPonderal Index: 11.1 kg/m3\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric&x=Calculate",
+    "image": "18-weight.png",
+    "date": "2026-09-25T11:22:10.764Z"
+  },
+  {
+    "id": 19,
+    "field": "weight",
+    "value": "",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide positive weight value.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=&printit=0&ctype=metric&x=Calculate",
+    "image": "19-weight.png",
+    "date": "2026-09-25T11:22:12.427Z"
+  },
+  {
+    "id": 20,
+    "field": "weight",
+    "value": "abc",
+    "text": "home / fitness & health / bmi calculator\nPrint\nBMI Calculator\nUS Units Metric Units Other Units\nAge\t  ages: 2 - 120\nGender\t\nMale   \nFemale\nHeight\tcm\nWeight\tkg\n \nPlease provide positive weight value.\n\n\n\n",
+    "url": "https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=abc&printit=0&ctype=metric&x=Calculate",
+    "image": "20-weight.png",
+    "date": "2026-09-25T11:22:13.633Z"
+  }
+]
