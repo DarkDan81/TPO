@@ -1,0 +1,8 @@
+{
+  "modal": "- dialog:\n  - heading \"Выйти из KnowBase?\" [level=2]\n  - paragraph: Это учебный макет. После выхода вы останетесь на этой странице.\n  - button \"Отмена\"\n  - button \"Выйти\"",
+  "category": {
+    "text": "▦ Категории",
+    "expanded": null,
+    "controls": null
+  }
+}

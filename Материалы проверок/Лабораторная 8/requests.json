@@ -1,0 +1,33 @@
+{
+  "capturedAt": "2026-09-25T11:48:06.424Z",
+  "site": "https://en.wikipedia.org",
+  "requests": [
+    {
+      "url": "https://en.wikipedia.org/w/api.php?action=cirrus-config-dump&format=json&formatversion=2&prop=usertesting",
+      "method": "GET",
+      "status": 200,
+      "type": "xhr",
+      "payload": null,
+      "contentType": "application/json; charset=utf-8",
+      "body": "{\"CirrusSearchActiveUserTest\":\"\"}"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/rest.php/v1/search/title?q=Software+testing&limit=10",
+      "method": "GET",
+      "status": 200,
+      "type": "fetch",
+      "payload": null,
+      "contentType": "application/json",
+      "body": "{\"pages\":[{\"id\":29090,\"key\":\"Software_testing\",\"title\":\"Software testing\",\"excerpt\":\"Software testing\",\"matched_title\":null,\"anchor\":null,\"description\":\"Checking software against expectations\",\"thumbnail\":{\"mimetype\":\"image/jpeg\",\"width\":60,\"height\":40,\"duration\":null,\"url\":\"//thumb.wikimedia.org/wikipedia/commons/thumb/0/05/TestingCup-Polish-Championship-in-Software-Testing-Katowice-2016.jpg/60px-TestingCup-Polish-Championship-in-Software-Testing-Katowice-2016.jpg?utm_source=en.wikipedia.org&utm_campaign=rest&utm_content=thumbnail\"}},{\"id\":53489871,\"key\":\"Software_testing_tactics\",\"title\":\"Software testing tactics\",\"excerpt\":\"Software testing tactics\",\"matched_title\":null,\"anchor\":null,\"description\":\"\",\"thumbnail\":null},{\"id\":15136570,\"key\":\"Software_testing_controversies\",\"title\":\"Software testing controversies\",\"excerpt\":\"Software testing controversies\",\"matched_title\":null,\"anchor\":null,\"description\":\"Controversies about what constitutes responsible software testing\",\"thumbnail\":null},{\"id\":21268028,\"key\":\"Software_Testing,_Verification_&_Reliability\",\"title\":\"Software Testing, Verification & Reliability\",\"excerpt\":\"Software Testing, Verification & Reliability\",\"matched_title\":null,\"anchor\":null,\"description\":\"Academic journal\",\"thumbnail\":null},{\"id\":14672486,\"key\":\"Software_testing_outsourcing\",\"title\":\"Software testing outsourcing\",\"excerpt\":\"Software testing outsourcing\",\"matched_title\":null,\"anchor\":null,\"description\":null,\"thumbnail\":null},{\"id\":61495237,\"key\":\"Software_testing_certification_board\",\"title\":\"Software testing certification board\",\"excerpt\":\"Software testing certification board\",\"matched_title\":null,\"anchor\":null,\"description\":null,\"thumbnail\":null},{\"id\":14676875,\"key\":\"Software_Testing_Automation_Framework\",\"title\":\"Software Testing Automation Framework\",\"excerpt\":\"Software Testing Automation Framework\",\"matched_title\":null,\"anchor\":null,\"description\":null,\"thumbnail\":null},{\"id\":40453929,\"key\":\"Software_testing_life_cycle\",\"title\":\"Software testing life cycle\",\"excerpt\":\"Software testing life cycle\",\"matched_title\":null,\"anchor\":null,\"description\":\"Topics referred to by the same term\",\"thumbnail\":null},{\"id\":222828,\"key\":\"Unit_testing\",\"title\":\"Unit testing\",\"excerpt\":\"Software test engineering\",\"matched_title\":\"Software test engineering\",\"anchor\":null,\"description\":\"Validating the behavior of isolated source code\",\"thumbnail\":null}]}"
+    },
+    {
+      "url": "https://en.wikipedia.org/api/rest_v1/page/summary/Quality_(business)",
+      "method": "GET",
+      "status": 200,
+      "type": "fetch",
+      "payload": null,
+      "contentType": "application/json; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/Summary/1.5.0\"",
+      "body": "{\"type\":\"standard\",\"title\":\"Quality (business)\",\"displaytitle\":\"<span lang=\\\"en\\\" dir=\\\"ltr\\\"><span class=\\\"mw-page-title-main\\\">Quality (business)</span></span>\",\"namespace\":{\"id\":0,\"text\":\"\"},\"wikibase_item\":\"Q185957\",\"titles\":{\"canonical\":\"Quality_(business)\",\"normalized\":\"Quality (business)\",\"display\":\"<span lang=\\\"en\\\" dir=\\\"ltr\\\"><span class=\\\"mw-page-title-main\\\">Quality (business)</span></span>\"},\"pageid\":12115455,\"lang\":\"en\",\"dir\":\"ltr\",\"revision\":\"1356745542\",\"tid\":\"1282673c-5b76-11f1-8f38-ce654d6a1a4a\",\"timestamp\":\"2026-05-29T15:50:10Z\",\"description\":\"Conformity of goods or services\",\"description_source\":\"local\",\"content_urls\":{\"desktop\":{\"page\":\"https://en.wikipedia.org/wiki/Quality_(business)\",\"revisions\":\"https://en.wikipedia.org/wiki/Quality_(business)?action=history\",\"edit\":\"https://en.wikipedia.org/wiki/Quality_(business)?action=edit\",\"talk\":\"https://en.wikipedia.org/wiki/Talk:Quality_(business)\"},\"mobile\":{\"page\":\"https://en.wikipedia.org/wiki/Quality_(business)\",\"revisions\":\"https://en.wikipedia.org/wiki/Special:History/Quality_(business)\",\"edit\":\"https://en.wikipedia.org/wiki/Quality_(business)?action=edit\",\"talk\":\"https://en.wikipedia.org/wiki/Talk:Quality_(business)\"}},\"extract\":\"In business, engineering, and manufacturing, quality has a pragmatic interpretation as the conformity of something ; it is defined as being suitable for the intended purpose while satisfying customer expectations. Quality may be a perceptual, conditional, and somewhat subjective attribute and may be understood differently by different people. Consumers may focus on the specification quality of a product/service, or how it compares to competitors in the marketplace. Producers might measure the conformance quality, or degree to which the product/service was produced correctly. Support personnel may measure quality in the degree that a product is reliable, maintainable, or sustainable. In such ways, the subjectivity of quality is rendered objective via operational definitions and measured with metrics such as proxy measures.\",\"extract_html\":\"<p>In business, engineering, and manufacturing, <b>quality</b> has a pragmatic interpretation as the conformity of something ; it is defined as being suitable for the intended purpose while satisfying customer expectations. Quality may be a perceptual, conditional, and somewhat subjective attribute and may be understood differently by different people. Consumers may focus on the specification quality of a product/service, or how it compares to competitors in the marketplace. Producers might measure the conformance quality, or degree to which the product/service was produced correctly. Support personnel may measure quality in the degree that a product is <span class=\\\"extiw\\\">reliable</span>, maintainable, or sustainable. In such ways, the subjectivity of quality is rendered objective via operational definitions and measured with metrics such as proxy measures.</p>\"}"
+    }
+  ]
+}
