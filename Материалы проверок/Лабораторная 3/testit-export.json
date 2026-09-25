@@ -1,0 +1,585 @@
+{
+  "projectUrl": "https://team-0axz.testit.software/projects/1",
+  "planUrl": "https://team-0axz.testit.software/projects/1/test-plans/7/tests",
+  "projectName": "Дущенко ИТМО",
+  "plan": {
+    "id": "d2fe8653-3b0b-4cbd-8eb7-c6e04a777eb6",
+    "globalId": 7,
+    "name": "Лабораторная 3",
+    "status": "Completed",
+    "description": "Цель: проверить верхнюю форму расчёта процентов. Объём: 15 пунктов чек-листа, позитивный, негативный и граничный тест-кейсы. Вне объёма: остальные калькуляторы, нагрузка, безопасность. Окружение: Windows 11, Chromium 139, 1366x900. Вход: сайт доступен, данные и ожидаемые результаты подготовлены. Выход: все проверки выполнены, отклонения зафиксированы; прохождение всех проверок не является условием окончания исследования. Риски: изменения публичного сайта и отсутствие полного ТЗ. Срок: 25.09.2026. Команда: Васильев К3440 — позитивные; Алексеев К3441 — негативные; Дущенко К3441 — границы; Цатинян К3439 — TMS и сводка. Проверки выполнены браузерной автоматизацией, результаты перенесены через API в ручной тест-план."
+  },
+  "suite": {
+    "id": "23633783-68b3-4cbd-bf49-692af7fd87bb",
+    "name": "Расчёт процентов — чек-лист и 3 тест-кейса",
+    "type": "Custom"
+  },
+  "items": [
+    {
+      "case": {
+        "id": "9dd26d07-ba45-4d22-a7c2-c1ac27506eeb",
+        "globalId": 3,
+        "name": "ЛР3 Чек-лист расчёта процентов — 15 проверок",
+        "entityTypeName": "CheckLists",
+        "description": "Позитивные, негативные и граничные проверки одной функции. До каждого пункта заново открыть исходную страницу. CL-14 повторяет BUG-001 из ЛР2.",
+        "priority": "High",
+        "preconditionSteps": [],
+        "steps": [
+          {
+            "workItem": null,
+            "id": "f563b43f-e66b-4b9e-af8c-d4374f7649cd",
+            "action": "CL-01 10% от 200",
+            "expected": "Результат равен 20.",
+            "testData": "Слева направо: 10; 200; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 20",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "bf1a9d70-3857-45fb-a0e2-825f923650d5",
+            "action": "CL-02 25% от 80",
+            "expected": "Результат равен 20.",
+            "testData": "Слева направо: 25; 80; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 20",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "9d398ec9-ef2e-4346-b469-49aff55c3ef0",
+            "action": "CL-03 Доля 20 от 200",
+            "expected": "Результат равен 10%.",
+            "testData": "Слева направо: [пусто]; 200; 20. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 10%",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "7b9398bc-e1d9-46d4-847d-cb0a059e6cef",
+            "action": "CL-04 Восстановление базы 10% = 20",
+            "expected": "Результат равен 200.",
+            "testData": "Слева направо: 10; [пусто]; 20. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 200",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "02e69208-ddf2-4dd5-9e70-1ad5a7b92486",
+            "action": "CL-05 Нулевая доля",
+            "expected": "Результат равен 0.",
+            "testData": "Слева направо: 0; 200; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 0",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "fbc639c7-5527-48c5-ac8f-50a41cb2bd03",
+            "action": "CL-06 Все число 100%",
+            "expected": "Результат равен 200.",
+            "testData": "Слева направо: 100; 200; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 200",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "7a4ec7e5-3512-40c2-94c0-cdd1f70374fd",
+            "action": "CL-07 Доля больше 100%",
+            "expected": "Результат равен 300.",
+            "testData": "Слева направо: 150; 200; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 300",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "782aaef8-66ce-404a-a80a-db8a5dea9c18",
+            "action": "CL-08 Дробный процент",
+            "expected": "Результат равен 5.",
+            "testData": "Слева направо: 2.5; 200; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 5",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "efdc0c97-2802-4ef7-bfd4-4d1ac6f2c9bd",
+            "action": "CL-09 Дробное число",
+            "expected": "Результат равен 1.25.",
+            "testData": "Слева направо: 10; 12.5; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 1.25",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "d4db4fa3-d3ac-4af2-a0fa-2bb1910d1722",
+            "action": "CL-10 Отрицательная база",
+            "expected": "Результат равен -20.",
+            "testData": "Слева направо: 10; -200; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: -20",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "241a3188-0278-43eb-aaba-15ca7625a7e6",
+            "action": "CL-11 Все поля пусты",
+            "expected": "Показано сообщение о необходимости ровно двух корректных чисел; противоречивые данные не принимаются.",
+            "testData": "Слева направо: [пусто]; [пусто]; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Отклонено: Please provide two numeric values in any fields below.",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "a1ac9eff-c777-49f8-9967-d60075382dbe",
+            "action": "CL-12 Заполнено только одно поле",
+            "expected": "Показано сообщение о необходимости ровно двух корректных чисел; противоречивые данные не принимаются.",
+            "testData": "Слева направо: 10; [пусто]; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Отклонено: Please provide two numeric values in any fields below.",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "50a06db6-258a-4f7d-80e5-ae8c5e5db774",
+            "action": "CL-13 Нечисловой процент",
+            "expected": "Показано сообщение о необходимости ровно двух корректных чисел; противоречивые данные не принимаются.",
+            "testData": "Слева направо: abc; 200; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Отклонено: Please provide two numeric values in any fields below.",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "e84d3eae-780a-43f6-980b-88bf943fe2da",
+            "action": "CL-14 Противоречивые три значения",
+            "expected": "Показано сообщение о необходимости ровно двух корректных чисел; противоречивые данные не принимаются.",
+            "testData": "Слева направо: 10; 200; 999. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Failed. Result: 20",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "a4665f50-be47-42bb-9e03-bd8a2751b8bb",
+            "action": "CL-15 Нулевая база",
+            "expected": "Результат равен 0.",
+            "testData": "Слева направо: 10; 0; [пусто]. Нажать Calculate.",
+            "comments": "Проверка 25.09.2026: Passed. Result: 0",
+            "workItemId": null
+          }
+        ]
+      },
+      "point": {
+        "id": "cb3711fe-44c5-441c-a860-bf3c33f6122b",
+        "status": "Failed",
+        "lastTestResultId": "911f5b59-f766-4360-ba9f-5a50dadf393c"
+      },
+      "result": {
+        "id": "911f5b59-f766-4360-ba9f-5a50dadf393c",
+        "outcome": "Failed",
+        "comment": "Проверено браузерной автоматизацией 25.09.2026. 14 из 15 пунктов пройдены. CL-14: для 10;200;999 получено 20 вместо сообщения о противоречии; повтор BUG-001 ЛР2. Доказательства: https://github.com/DarkDan81/TPO — Материалы проверок/Лабораторная 3/checks.json.",
+        "stepResults": [
+          {
+            "stepId": "f563b43f-e66b-4b9e-af8c-d4374f7649cd",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "bf1a9d70-3857-45fb-a0e2-825f923650d5",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "9d398ec9-ef2e-4346-b469-49aff55c3ef0",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "7b9398bc-e1d9-46d4-847d-cb0a059e6cef",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "02e69208-ddf2-4dd5-9e70-1ad5a7b92486",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "fbc639c7-5527-48c5-ac8f-50a41cb2bd03",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "7a4ec7e5-3512-40c2-94c0-cdd1f70374fd",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "782aaef8-66ce-404a-a80a-db8a5dea9c18",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "efdc0c97-2802-4ef7-bfd4-4d1ac6f2c9bd",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "d4db4fa3-d3ac-4af2-a0fa-2bb1910d1722",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "241a3188-0278-43eb-aaba-15ca7625a7e6",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "a1ac9eff-c777-49f8-9967-d60075382dbe",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "50a06db6-258a-4f7d-80e5-ae8c5e5db774",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "e84d3eae-780a-43f6-980b-88bf943fe2da",
+            "outcome": "Failed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "a4665f50-be47-42bb-9e03-bd8a2751b8bb",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          }
+        ],
+        "completedOn": "2026-09-25T11:43:40.217Z"
+      }
+    },
+    {
+      "case": {
+        "id": "6bb9347e-c4c3-43e4-b8b7-481903052205",
+        "globalId": 4,
+        "name": "ЛР3 Позитивный — 10% от 200",
+        "entityTypeName": "TestCases",
+        "description": "Тип: Позитивный. Данные: 10; 200; пусто. Приоритет High. Контрольный сценарий CL-01.",
+        "priority": "High",
+        "preconditionSteps": [
+          {
+            "workItem": null,
+            "id": "30ddac76-8f1e-4d16-8fda-1fb68a015cd3",
+            "action": "Открыть https://www.calculator.net/percent-calculator.html. Использовать верхнюю форму Percentage Calculator.",
+            "expected": "Видны три поля и Calculate; пользовательская авторизация не нужна.",
+            "testData": "",
+            "comments": "",
+            "workItemId": null
+          }
+        ],
+        "steps": [
+          {
+            "workItem": null,
+            "id": "bb466dfb-ef88-4e95-88c4-e1896ef14281",
+            "action": "Очистить все три поля верхней формы.",
+            "expected": "Все три поля пусты.",
+            "testData": "",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "1a6331e7-aa33-48e5-8daa-82c58113b7c3",
+            "action": "Ввести 10 в первое поле.",
+            "expected": "В поле отображается 10.",
+            "testData": "10",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "ec13d300-c8ca-4be7-96f5-66b8690b198c",
+            "action": "Ввести 200 в второе поле.",
+            "expected": "В поле отображается 200.",
+            "testData": "200",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "8132d165-db8d-4742-b45f-cade7f653a21",
+            "action": "Оставить третье поле пустым и нажать Calculate.",
+            "expected": "Результат равен 20.",
+            "testData": "Третье поле: пустая строка.",
+            "comments": "",
+            "workItemId": null
+          }
+        ]
+      },
+      "point": {
+        "id": "fc542781-09eb-45c1-9d21-43944b7ba9a5",
+        "status": "Passed",
+        "lastTestResultId": "a237f330-d954-4952-90ee-075ce4cbc822"
+      },
+      "result": {
+        "id": "a237f330-d954-4952-90ee-075ce4cbc822",
+        "outcome": "Passed",
+        "comment": "Проверено браузерной автоматизацией 25.09.2026. Все 4 шага пройдены; результат соответствует ожиданию. Контрольный пункт CL-01. Доказательства: https://github.com/DarkDan81/TPO — Материалы проверок/Лабораторная 3/checks.json.",
+        "stepResults": [
+          {
+            "stepId": "bb466dfb-ef88-4e95-88c4-e1896ef14281",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "1a6331e7-aa33-48e5-8daa-82c58113b7c3",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "ec13d300-c8ca-4be7-96f5-66b8690b198c",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "8132d165-db8d-4742-b45f-cade7f653a21",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          }
+        ],
+        "completedOn": "2026-09-25T11:42:11.974Z"
+      }
+    },
+    {
+      "case": {
+        "id": "a234183e-a042-48c5-9a5b-f8b8131dacd6",
+        "globalId": 5,
+        "name": "ЛР3 Негативный — Нечисловой процент",
+        "entityTypeName": "TestCases",
+        "description": "Тип: Негативный. Данные: abc; 200; пусто. Приоритет High. Контрольный сценарий CL-13.",
+        "priority": "High",
+        "preconditionSteps": [
+          {
+            "workItem": null,
+            "id": "9bf21fe3-179f-4d83-8902-6d364e71f5dd",
+            "action": "Открыть https://www.calculator.net/percent-calculator.html. Использовать верхнюю форму Percentage Calculator.",
+            "expected": "Видны три поля и Calculate; пользовательская авторизация не нужна.",
+            "testData": "",
+            "comments": "",
+            "workItemId": null
+          }
+        ],
+        "steps": [
+          {
+            "workItem": null,
+            "id": "611fc4f1-d36d-48ba-9953-d5847914a5e9",
+            "action": "Очистить все три поля верхней формы.",
+            "expected": "Все три поля пусты.",
+            "testData": "",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "1d2d6b1b-0184-4f52-a94f-ea3b2433d006",
+            "action": "Ввести abc в первое поле.",
+            "expected": "В поле отображается abc.",
+            "testData": "abc",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "243c354e-12a1-48fd-a10b-db2734773642",
+            "action": "Ввести 200 в второе поле.",
+            "expected": "В поле отображается 200.",
+            "testData": "200",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "175cc7c6-d427-4e22-8261-4c59e3337bcb",
+            "action": "Оставить третье поле пустым и нажать Calculate.",
+            "expected": "Показано сообщение о необходимости ровно двух корректных чисел; противоречивые данные не принимаются.",
+            "testData": "Третье поле: пустая строка.",
+            "comments": "",
+            "workItemId": null
+          }
+        ]
+      },
+      "point": {
+        "id": "66e143c1-5068-465c-97c3-6abb6a1c5a2f",
+        "status": "Passed",
+        "lastTestResultId": "a52852ae-bbce-4a23-936b-239546b7d858"
+      },
+      "result": {
+        "id": "a52852ae-bbce-4a23-936b-239546b7d858",
+        "outcome": "Passed",
+        "comment": "Проверено браузерной автоматизацией 25.09.2026. Все 4 шага пройдены; результат соответствует ожиданию. Контрольный пункт CL-13. Доказательства: https://github.com/DarkDan81/TPO — Материалы проверок/Лабораторная 3/checks.json.",
+        "stepResults": [
+          {
+            "stepId": "611fc4f1-d36d-48ba-9953-d5847914a5e9",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "1d2d6b1b-0184-4f52-a94f-ea3b2433d006",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "243c354e-12a1-48fd-a10b-db2734773642",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "175cc7c6-d427-4e22-8261-4c59e3337bcb",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          }
+        ],
+        "completedOn": "2026-09-25T11:43:48.088Z"
+      }
+    },
+    {
+      "case": {
+        "id": "42b945de-109c-4a6f-8fba-c6a25160eda9",
+        "globalId": 6,
+        "name": "ЛР3 Граничный — Нулевая доля",
+        "entityTypeName": "TestCases",
+        "description": "Тип: Граничный. Данные: 0; 200; пусто. Приоритет High. Контрольный сценарий CL-05.",
+        "priority": "High",
+        "preconditionSteps": [
+          {
+            "workItem": null,
+            "id": "f79928f6-cb51-4f3b-913b-9990d52ddbdb",
+            "action": "Открыть https://www.calculator.net/percent-calculator.html. Использовать верхнюю форму Percentage Calculator.",
+            "expected": "Видны три поля и Calculate; пользовательская авторизация не нужна.",
+            "testData": "",
+            "comments": "",
+            "workItemId": null
+          }
+        ],
+        "steps": [
+          {
+            "workItem": null,
+            "id": "6ecb7100-3f8d-4054-9947-c6b25051865c",
+            "action": "Очистить все три поля верхней формы.",
+            "expected": "Все три поля пусты.",
+            "testData": "",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "d1e8cfde-cef7-4545-9993-997b47f9c005",
+            "action": "Ввести 0 в первое поле.",
+            "expected": "В поле отображается 0.",
+            "testData": "0",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "0811b4d1-e8ba-45a0-a763-a17ac08997a3",
+            "action": "Ввести 200 в второе поле.",
+            "expected": "В поле отображается 200.",
+            "testData": "200",
+            "comments": "",
+            "workItemId": null
+          },
+          {
+            "workItem": null,
+            "id": "248927fc-9254-4234-aa46-98d9ab3f6832",
+            "action": "Оставить третье поле пустым и нажать Calculate.",
+            "expected": "Результат равен 0.",
+            "testData": "Третье поле: пустая строка.",
+            "comments": "",
+            "workItemId": null
+          }
+        ]
+      },
+      "point": {
+        "id": "3809454b-8448-4275-9524-093db3654ed8",
+        "status": "Passed",
+        "lastTestResultId": "e1607950-b6ac-4738-8297-e82ae2ab5c54"
+      },
+      "result": {
+        "id": "e1607950-b6ac-4738-8297-e82ae2ab5c54",
+        "outcome": "Passed",
+        "comment": "Проверено браузерной автоматизацией 25.09.2026. Все 4 шага пройдены; результат соответствует ожиданию. Контрольный пункт CL-05. Доказательства: https://github.com/DarkDan81/TPO — Материалы проверок/Лабораторная 3/checks.json.",
+        "stepResults": [
+          {
+            "stepId": "6ecb7100-3f8d-4054-9947-c6b25051865c",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "d1e8cfde-cef7-4545-9993-997b47f9c005",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "0811b4d1-e8ba-45a0-a763-a17ac08997a3",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          },
+          {
+            "stepId": "248927fc-9254-4234-aa46-98d9ab3f6832",
+            "outcome": "Passed",
+            "sharedStepVersionId": null,
+            "sharedStepResults": [],
+            "comment": null
+          }
+        ],
+        "completedOn": "2026-09-25T11:43:53.481Z"
+      }
+    }
+  ]
+}
