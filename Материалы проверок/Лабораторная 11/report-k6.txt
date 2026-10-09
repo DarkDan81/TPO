@@ -1,0 +1,21 @@
+█ THRESHOLDS
+  http_req_duration
+  ✗ 'p(95)<500' p(95)=620ms
+  http_req_failed
+  ✓ 'rate<0.01' rate=0.60%
+
+█ TOTAL RESULTS
+  checks_total.....................: 10000   55.56/s
+  checks_succeeded.................: 99.40%  9940 out of 10000
+  checks_failed....................: 0.60%   60 out of 10000
+
+  HTTP
+  http_req_duration................: avg=210ms min=82ms med=170ms
+                                     max=3.90s p(90)=360ms p(95)=620ms
+  http_req_failed..................: 0.60%   60 out of 10000
+  http_reqs........................: 10000   55.56/s
+
+  EXECUTION
+  iterations.......................: 10000   55.56/s
+  vus..............................: 2   min=2 max=50
+  vus_max..........................: 50  min=50 max=50

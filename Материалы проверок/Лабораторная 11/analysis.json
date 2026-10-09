@@ -1,0 +1,53 @@
+{
+  "source": "Лабы/Лабораторная 11.docx",
+  "sourceSha256": "f0466a51809beb0211d1b7e42f76ed92fff10edf411fa5668cb21a0ff01aaf4a",
+  "analysisDate": "2026-10-09",
+  "newLoadTestPerformed": false,
+  "object": "Поиск учебного портала KnowBase",
+  "durationSeconds": 180,
+  "maxActiveVUs": 50,
+  "finalActiveVUs": 2,
+  "requests": 10000,
+  "rps": 55.56,
+  "avgMs": 210,
+  "minMs": 82,
+  "medianMs": 170,
+  "p90Ms": 360,
+  "p95Ms": 620,
+  "maxMs": 3900,
+  "failedRequests": 60,
+  "failedRatePercent": 0.6,
+  "totalChecks": 10000,
+  "successfulChecks": 9940,
+  "successfulChecksPercent": 99.4,
+  "failedChecks": 60,
+  "iterations": 10000,
+  "requirements": [
+    {
+      "requirement": "p95 < 500 мс",
+      "actual": "620 мс",
+      "passed": false,
+      "reason": "620 ≥ 500; превышение порога на 120 мс, или 24%."
+    },
+    {
+      "requirement": "Ошибки < 1%",
+      "actual": "0,60% (60 из 10 000)",
+      "passed": true,
+      "reason": "0,60 < 1; доля ниже порога на 0,40 процентного пункта."
+    },
+    {
+      "requirement": "Успешные проверки ≥ 99%",
+      "actual": "99,40% (9 940 из 10 000)",
+      "passed": true,
+      "reason": "99,40 ≥ 99; доля выше минимума на 0,40 процентного пункта."
+    }
+  ],
+  "overallPassed": false,
+  "passedRequirements": 2,
+  "totalRequirements": 3,
+  "configuredThresholdsShown": [
+    "http_req_duration: p(95)<500",
+    "http_req_failed: rate<0.01"
+  ],
+  "checksRequirementShownAsThreshold": false
+}
