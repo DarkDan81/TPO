@@ -1,11 +1,12 @@
 // Требуется Node.js и Playwright: npm install playwright; npx playwright install chromium.
 // Запуск: node check-form.cjs. Новый прогон записывается отдельно от исходных доказательств.
+// Для уже установленного Chromium можно задать PLAYWRIGHT_CHROMIUM_PATH.
 const fs=require('fs'),path=require('path');
 const {chromium}=require('playwright');
 (async()=>{
  const out=path.resolve(process.argv[2]||'lab5-rerun');fs.mkdirSync(out,{recursive:true});
  const rows=JSON.parse(fs.readFileSync(path.join(__dirname,'design.json'),'utf8'));
- const browser=await chromium.launch();const context=await browser.newContext({viewport:{width:1366,height:900},locale:'en-US',timezoneId:'Europe/Moscow',deviceScaleFactor:1});const page=await context.newPage();
+ const browser=await chromium.launch(process.env.PLAYWRIGHT_CHROMIUM_PATH?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_PATH}:{});const context=await browser.newContext({viewport:{width:1366,height:900},locale:'en-US',timezoneId:'Europe/Moscow',deviceScaleFactor:1});const page=await context.newPage();
  const url=require('url').pathToFileURL(path.join(__dirname,'index.html')).href;const results=[];
  try{
   for(const r of rows){
