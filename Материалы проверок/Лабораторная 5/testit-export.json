@@ -1,0 +1,2326 @@
+{
+  "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+  "plan": {
+    "status": "Completed",
+    "startedOn": "2026-10-09T18:57:38.091Z",
+    "completedOn": "2026-10-09T18:59:34.638Z",
+    "createdDate": "2026-10-09T18:56:50.572Z",
+    "modifiedDate": "2026-10-09T19:02:14.39Z",
+    "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+    "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+    "globalId": 56,
+    "isDeleted": false,
+    "lockedDate": null,
+    "id": "4cc25e67-a879-4fc0-86e2-98c86b817a09",
+    "lockedById": null,
+    "tags": [],
+    "name": "Лабораторная 5",
+    "startDate": "2026-10-09T18:57:38.091Z",
+    "endDate": "2026-10-09T18:59:34.638Z",
+    "description": "Классы эквивалентности, границы и Pairwise. План выполнен браузерной автоматизацией; результаты перенесены в ручной план под одной доступной учётной записью.",
+    "build": "SHA256 152a6cf782a8aa1ea9c88dc2cc60f80eddbd05c2ed3154ea6032a543a66f0fe7",
+    "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+    "productName": "DevMeet учебный макет",
+    "hasAutomaticDurationTimer": null,
+    "attributes": {
+      "099e9e34-3fcd-461e-b379-04fbf7f0ec6f": "Все 20 кейсов исполнены; результаты, скриншоты и экспорт сохранены.",
+      "161450d7-9da2-4428-ada7-d59f085b5562": "Макет доступен, требования и ожидания подготовлены.",
+      "2b56c6a1-5f16-4943-9498-b15d2199b6ff": "Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "5e5fc3f0-006a-4276-af1c-2225c832fe7a": "Проверить восемь полей формы тремя техниками тест-дизайна.",
+      "bc571a05-3a6f-41c6-a6c5-a2236f7c9792": "Учебный клиентский макет без backend; не проверяются доставка заявок, безопасность, нагрузка и другие браузеры.",
+      "cfc21158-beae-428b-bb1a-abe3d39c85d4": "78 браузерных проверок: ЭК, ГЗ, Pairwise. В TMS: 8 ЭК, 6 ГЗ возраста, 6 Pairwise.",
+      "e7f1f8d0-b5a6-4282-bb28-040e42d6529d": "Обновить форму, заполнить все поля конкретными данными, отправить, сравнить принятие и ошибки с независимым ожиданием."
+    }
+  },
+  "sections": {
+    "ЭК": {
+      "attachments": [],
+      "preconditionSteps": [],
+      "postconditionSteps": [],
+      "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+      "parentId": "c86cc7be-56da-418e-91c8-f52b127c9140",
+      "isDeleted": false,
+      "id": "b943c170-e2ed-455e-8e2f-571c34437a9e",
+      "createdDate": "2026-10-09T18:55:54.715Z",
+      "modifiedDate": "2026-10-09T18:55:54.715Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "name": "Классы эквивалентности"
+    },
+    "ГЗ": {
+      "attachments": [],
+      "preconditionSteps": [],
+      "postconditionSteps": [],
+      "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+      "parentId": "c86cc7be-56da-418e-91c8-f52b127c9140",
+      "isDeleted": false,
+      "id": "f27b49f9-c4ca-4ee0-b72e-05ffed061fc2",
+      "createdDate": "2026-10-09T18:55:55.733Z",
+      "modifiedDate": "2026-10-09T18:55:55.733Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "name": "Граничные значения"
+    },
+    "Pairwise": {
+      "attachments": [],
+      "preconditionSteps": [],
+      "postconditionSteps": [],
+      "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+      "parentId": "c86cc7be-56da-418e-91c8-f52b127c9140",
+      "isDeleted": false,
+      "id": "8f1998f6-ef20-4c4f-94ee-c34586401871",
+      "createdDate": "2026-10-09T18:55:56.805Z",
+      "modifiedDate": "2026-10-09T18:55:56.805Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "name": "Pairwise"
+    }
+  },
+  "suites": {
+    "ЭК": {
+      "id": "e0543c15-f503-4114-97c6-3701795c9e2f",
+      "refreshDate": null,
+      "parentId": null,
+      "testPlanId": "4cc25e67-a879-4fc0-86e2-98c86b817a09",
+      "name": "Классы эквивалентности",
+      "type": "Custom",
+      "saveStructure": false,
+      "autoRefresh": false
+    },
+    "ГЗ": {
+      "id": "8da91835-898a-4b70-9dee-4532882a3292",
+      "refreshDate": null,
+      "parentId": null,
+      "testPlanId": "4cc25e67-a879-4fc0-86e2-98c86b817a09",
+      "name": "Граничные значения",
+      "type": "Custom",
+      "saveStructure": false,
+      "autoRefresh": false
+    },
+    "Pairwise": {
+      "id": "46106039-6660-4c07-b2d1-da685272681f",
+      "refreshDate": null,
+      "parentId": null,
+      "testPlanId": "4cc25e67-a879-4fc0-86e2-98c86b817a09",
+      "name": "Pairwise",
+      "type": "Custom",
+      "saveStructure": false,
+      "autoRefresh": false
+    }
+  },
+  "items": [
+    {
+      "matrixId": "L5-017",
+      "id": "ca63297f-75ab-4e4b-984f-7a4ec03d5174",
+      "globalId": 36,
+      "section": "ЭК",
+      "name": "ЭК: Возраст — Целое от 18 до 80",
+      "description": "ID в матрице: L5-017. Тип: Позитивный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Позитивный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "6f5266d6-fe8c-4267-9253-e0bac8df6ce4",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "78a89465-e5b7-4d84-a702-ba3dfe6567ac",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=40; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "f7e86b4b-96ca-4657-af4f-e03afb49ae66",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Возраст; значение: 40",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "67294a62-72c3-4f86-a052-8678ea88c4e9",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "948d1250-643b-473a-8e37-27931569b377",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-018",
+      "id": "69b74ea7-8132-405d-902f-b681219d8ddf",
+      "globalId": 37,
+      "section": "ЭК",
+      "name": "ЭК: Возраст — Меньше 18",
+      "description": "ID в матрице: L5-018. Тип: Негативный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Негативный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "ad1357a5-831d-44ca-ab58-b8a678de21e1",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "e57915f5-40ec-49f4-82ab-29b303ed2199",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=15; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "cb77face-61cf-408b-9a51-df3eb64fc479",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+          "testData": "Проверяемое поле: Возраст; значение: 15",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "d103be76-e470-4ba2-8f20-adbeb51956e4",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация отклонена» и ошибка только поля «Возраст»; остальные поля корректны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "bf66d8d3-69e2-4ef4-9fed-7f8bd948fbab",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "15",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-019",
+      "id": "084ef445-2d19-4846-b1db-50ecc2351276",
+      "globalId": 38,
+      "section": "ЭК",
+      "name": "ЭК: Возраст — Больше 80",
+      "description": "ID в матрице: L5-019. Тип: Негативный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Негативный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "ed4df508-b4c0-4e3d-bf4b-bc28a06f8616",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "7853e07f-31cc-44f7-b703-8f3d343cb518",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=90; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "d5751f4b-3c5a-4f60-9ac3-b3d0005fb006",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+          "testData": "Проверяемое поле: Возраст; значение: 90",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "12206dcd-c97a-4b8d-a6a0-18765c637644",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация отклонена» и ошибка только поля «Возраст»; остальные поля корректны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "4e2b23b7-239f-4641-a7d8-9688abb6b28e",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "90",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-020",
+      "id": "1a6465d2-e4da-41cb-974c-853fa9e7f99a",
+      "globalId": 39,
+      "section": "ЭК",
+      "name": "ЭК: Возраст — Пустое",
+      "description": "ID в матрице: L5-020. Тип: Негативный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Негативный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "0e4dcf09-a274-4b53-b4b5-6bcc7eb1f78f",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "10ec4a5d-8187-4e42-b5ce-38ca414a3163",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=[пусто]; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "74d64f31-f3de-4e8e-8e48-d08246438ccb",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+          "testData": "Проверяемое поле: Возраст; значение: [пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "edb90302-81ca-4a6b-8a03-e1aae806ad29",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация отклонена» и ошибка только поля «Возраст»; остальные поля корректны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "1116f214-047a-420b-aedb-7d5862e6c038",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-021",
+      "id": "62739cdf-804f-40dc-948f-aa63860ce3e6",
+      "globalId": 40,
+      "section": "ЭК",
+      "name": "ЭК: Возраст — Нечисловое",
+      "description": "ID в матрице: L5-021. Тип: Негативный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Негативный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "7f596e25-21a1-4caa-a4e5-afc361945977",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "6daef49f-e9c1-44dd-b2f4-5e3fc90b298a",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=abc; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "10dac698-e6f1-4a46-9c58-0543629772f2",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+          "testData": "Проверяемое поле: Возраст; значение: abc",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "c9017925-28b4-414f-8d70-8af7530c0418",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация отклонена» и ошибка только поля «Возраст»; остальные поля корректны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "434f2998-321a-4e2b-8208-1590407d81c6",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "abc",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-023",
+      "id": "bb0b49bf-29bc-445b-be70-bbd3917a9254",
+      "globalId": 41,
+      "section": "ЭК",
+      "name": "ЭК: Email — Корректный адрес",
+      "description": "ID в матрице: L5-023. Тип: Позитивный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Позитивный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "9b9dd4da-34a5-482b-b612-43e37c93defb",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "480c8966-25eb-48a9-abed-823a70903a4a",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=40; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "11bd331f-f7c6-4183-ac29-dd9b153ab253",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Email; значение: tester@example.org",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "2bc814a7-8897-474f-bb6c-60d5fda4a2dc",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "f510913d-f9cb-43ee-bd1f-4ed3415d16ac",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-024",
+      "id": "36ccc09c-214f-4fe1-a80f-56f40e7d3a4c",
+      "globalId": 42,
+      "section": "ЭК",
+      "name": "ЭК: Email — Пустое обязательное",
+      "description": "ID в матрице: L5-024. Тип: Негативный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Негативный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "e23b29bc-2a83-4d9e-bdfe-42db20fb6997",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "4a0691ba-aef0-42f0-ac8e-dcafe9473935",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=[пусто]; age=40; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "bdb03788-d6b8-4e80-b74b-be52d7b058d5",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация отклонена; ошибка поля «Email»",
+          "testData": "Проверяемое поле: Email; значение: [пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "a86503cb-5be4-4fba-9c40-382c3e55fedd",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация отклонена» и ошибка только поля «Email»; остальные поля корректны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "5d549d81-0dc2-4408-b4c4-a9efff587195",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-025",
+      "id": "3af8f18d-840b-45a9-8e6d-cf1148c0b6f3",
+      "globalId": 43,
+      "section": "ЭК",
+      "name": "ЭК: Email — Нет @",
+      "description": "ID в матрице: L5-025. Тип: Негативный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Негативный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "e698038a-d833-44d9-9c81-7dffdb558b1f",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "33ca47a9-1836-4661-a46e-ac8873e3a096",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester.example.org; age=40; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "d15a17a5-6b72-40e5-bb0f-f64f6582c6b0",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация отклонена; ошибка поля «Email»",
+          "testData": "Проверяемое поле: Email; значение: tester.example.org",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "bf8a2db7-539b-4c95-8ea7-f389f3971545",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация отклонена» и ошибка только поля «Email»; остальные поля корректны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "dc931258-6a99-450b-a9d4-d0686e76e3e0",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester.example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-061",
+      "id": "2dcb4048-5e85-4ae6-ae23-3c10324cdcce",
+      "globalId": 44,
+      "section": "ГЗ",
+      "name": "ГЗ: Возраст — Возраст 17",
+      "description": "ID в матрице: L5-061. Тип: Граничный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Граничный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "f70d90c7-1f68-4721-9a9a-ef8781c791da",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "c0a896cd-39fd-4543-ae44-cb4880d8b438",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=17; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "67170509-164d-43a2-8179-548324c3715d",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+          "testData": "Проверяемое поле: Возраст; значение: 17",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "1bc260d7-8644-4030-b01b-3816bb30816e",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация отклонена» и ошибка только поля «Возраст»; остальные поля корректны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "721b5fdb-86de-48e0-bfc7-a88ed7f4b04d",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "17",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-062",
+      "id": "407ad8ff-db19-4e3c-bf44-78f410049611",
+      "globalId": 45,
+      "section": "ГЗ",
+      "name": "ГЗ: Возраст — Возраст 18",
+      "description": "ID в матрице: L5-062. Тип: Граничный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Граничный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "4775c53c-04ff-4aa9-9ada-2a06c56a6562",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "a260635f-593e-4178-87a3-841c3a55b70c",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=18; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "c4250fcf-1dbb-45e7-aeb8-45841812332d",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Возраст; значение: 18",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "f07c8aa8-dd2c-450a-9564-8412d5631743",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "5022bca9-89e0-4b3f-bce5-f8591eccadde",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "18",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-063",
+      "id": "d79ad402-893a-4bf6-a70f-dbf44a215ed0",
+      "globalId": 46,
+      "section": "ГЗ",
+      "name": "ГЗ: Возраст — Возраст 19",
+      "description": "ID в матрице: L5-063. Тип: Граничный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Граничный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "cb87f406-f390-47f5-9a2a-7e13056baa13",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "54b47146-e534-4c95-bcc2-a4f0d990c745",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=19; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "c3e34a7e-b8e1-464e-8ec1-1f070c218f61",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Возраст; значение: 19",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "c2be83ab-24d3-458d-ad0e-f630024b77f7",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "95113ff6-f400-44ac-9a98-77d13748b684",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "19",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-064",
+      "id": "ec08eb24-45a3-4e8a-bfb9-c456021e1c29",
+      "globalId": 47,
+      "section": "ГЗ",
+      "name": "ГЗ: Возраст — Возраст 79",
+      "description": "ID в матрице: L5-064. Тип: Граничный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Граничный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "37828c6e-8f86-4838-bf8b-92da72b88c96",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "0f2d5a2f-183f-48a1-b7f7-d76a51795a03",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=79; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "9b3b93e1-8a33-4fd7-8f1e-30e6ba728d56",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Возраст; значение: 79",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "503f3177-3508-4423-acd9-e8612f5f8f4a",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "872c6694-e5aa-4efb-9ff4-ee23e46e81bf",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "79",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-065",
+      "id": "f35ff79e-e176-4e22-b1b6-5d264a97529f",
+      "globalId": 48,
+      "section": "ГЗ",
+      "name": "ГЗ: Возраст — Возраст 80",
+      "description": "ID в матрице: L5-065. Тип: Граничный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Граничный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "1fe63c25-a255-443b-8741-9afd6b788c1d",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "1da779dd-3285-4ae7-826f-271dc747e2b9",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=80; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "bf5c1472-528a-4e73-bcaa-8f0f2e248ca7",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Возраст; значение: 80",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "443a9215-e07d-4fc2-a874-b65bb0d3b4b1",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "1eafa0b6-97ca-4150-b4c6-c0720a732f33",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "80",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-066",
+      "id": "ab769935-560b-4991-9705-171984c5c278",
+      "globalId": 49,
+      "section": "ГЗ",
+      "name": "ГЗ: Возраст — Возраст 81",
+      "description": "ID в матрице: L5-066. Тип: Граничный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Граничный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "d9baff10-784a-4564-bbf5-58b9440c402e",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "d57573d7-a7a5-4f6a-b6de-c5919ea4d129",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=81; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "7d98cd30-9df5-4f0f-8eed-b4ab33d8cc3a",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+          "testData": "Проверяемое поле: Возраст; значение: 81",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "30a6acbd-73b4-461d-9793-78e6455d46b3",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация отклонена» и ошибка только поля «Возраст»; остальные поля корректны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "72c14242-e32b-4453-b069-08f35095d1d6",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "81",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-073",
+      "id": "5e300205-b24e-4497-8600-fcab78c30bd9",
+      "globalId": 50,
+      "section": "Pairwise",
+      "name": "Pairwise: Докладчик / Очно / Без промокода",
+      "description": "ID в матрице: L5-073. Тип: Позитивный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Позитивный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "ce85be45-f49a-4015-8bba-f5438ab8ffb8",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "6aa0b523-bf04-49d3-976a-a2c8b40e4da2",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=40; phone=0123456789; role=Докладчик; format=Очно; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "03ec1683-e0be-4f27-8b30-a8a075e32f5c",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Тип участия; значение: Докладчик",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "c4284505-ca8f-40e9-a20a-d112ec480160",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "3a4a6d81-f308-449a-944a-8fcfac09c17b",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Докладчик",
+        "format": "Очно",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-074",
+      "id": "1f10c99f-52bf-407e-9164-028bfa3513cd",
+      "globalId": 51,
+      "section": "Pairwise",
+      "name": "Pairwise: Докладчик / Онлайн / С промокодом",
+      "description": "ID в матрице: L5-074. Тип: Позитивный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Позитивный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "5c13f445-9ed7-4ca7-90b6-d9e42dc59ae7",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "89125619-07c3-4708-a0e4-94fe039f519f",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=40; phone=0123456789; role=Докладчик; format=Онлайн; promo=DEV2026A",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "5e92b871-c787-41d9-941f-9c4f95c3593e",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Тип участия; значение: Докладчик",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "0769e3c9-4877-4b69-87f6-b2cc7a837caa",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "c5156bff-96bf-49f9-b9e8-fa77a3d48721",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Докладчик",
+        "format": "Онлайн",
+        "promo": "DEV2026A"
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-075",
+      "id": "55e1320c-ab80-4ccb-85b7-5f2b3c5ed04e",
+      "globalId": 52,
+      "section": "Pairwise",
+      "name": "Pairwise: Слушатель / Очно / С промокодом",
+      "description": "ID в матрице: L5-075. Тип: Позитивный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Позитивный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "74646bcb-6948-4985-9789-581f32d1c948",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "4158838f-a9bc-4f65-9c02-f63cc8cf44be",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=40; phone=0123456789; role=Слушатель; format=Очно; promo=DEV2026A",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "b3d91a5d-25b6-42f4-b9bc-fbf5ddaf844d",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Тип участия; значение: Слушатель",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "77a134ea-5933-49d6-96b5-845db899fec1",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "cc16ad73-6e9d-4104-87b5-8bb1b6216bc9",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Очно",
+        "promo": "DEV2026A"
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-076",
+      "id": "7efbe70a-ceb0-4dc7-93f4-00289210e878",
+      "globalId": 53,
+      "section": "Pairwise",
+      "name": "Pairwise: Слушатель / Онлайн / Без промокода",
+      "description": "ID в матрице: L5-076. Тип: Позитивный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Позитивный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "5a207ad9-c73d-491f-9609-620475a93630",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "6402b0c2-dfca-48f3-9398-c491a833472a",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=40; phone=0123456789; role=Слушатель; format=Онлайн; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "c31d21ea-d6db-4a39-a9bd-cfe30bfcd4d9",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Тип участия; значение: Слушатель",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "ced70681-b27e-44e7-b5a4-5037d1a9d0d8",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "58aa35a1-386b-4c9d-a5ba-67ab02caf460",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Слушатель",
+        "format": "Онлайн",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-077",
+      "id": "467ed250-8a88-4440-acc1-cc03f7c00211",
+      "globalId": 54,
+      "section": "Pairwise",
+      "name": "Pairwise: Организатор / Очно / Без промокода",
+      "description": "ID в матрице: L5-077. Тип: Позитивный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Позитивный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "ace228ae-c2d2-4c16-a923-0ba3225ce757",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "9f421c30-f6c1-40a0-951e-79e32697b3a5",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=40; phone=0123456789; role=Организатор; format=Очно; promo=[пусто]",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "a240a145-99e7-4fa0-8a60-de5a2088c321",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Тип участия; значение: Организатор",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "6b6881d3-d2c9-43e8-a680-c5185fa2fe39",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "21338e09-8fe9-47fe-8f3a-88fa05db7d76",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Организатор",
+        "format": "Очно",
+        "promo": ""
+      },
+      "status": "Passed"
+    },
+    {
+      "matrixId": "L5-078",
+      "id": "e455f554-8001-46c1-8448-2f63a0bbb5e5",
+      "globalId": 55,
+      "section": "Pairwise",
+      "name": "Pairwise: Организатор / Онлайн / С промокодом",
+      "description": "ID в матрице: L5-078. Тип: Позитивный. Ожидание задано по требованиям лабораторной №5. Объект: локальный учебный макет DevMeet, а не производственный сервис. Окружение: Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+      "type": "Позитивный",
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "e2d4aeed-6f12-42c5-9f4f-547e1f6ef1ae",
+          "action": "Скачать из репозитория DarkDan81/TPO файл «Материалы проверок/Лабораторная 5/index.html» и открыть в Chromium. Авторизация и сеть форме не нужны.",
+          "expected": "Видны восемь полей и кнопка «Зарегистрироваться»; результат отсутствует.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "d0c7b757-f9ec-4aa3-8609-3d6b1a71983f",
+          "action": "Заполнить все восемь полей указанными данными. Для пустого значения очистить поле или не выбирать формат.",
+          "expected": "Поля содержат указанные значения; проверяемое значение не заменено и не обрезано.",
+          "testData": "first=Артём; last=Васильев; email=tester@example.org; age=40; phone=0123456789; role=Организатор; format=Онлайн; promo=DEV2026A",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "620da34e-f544-4673-9ea7-b23c73199e50",
+          "action": "Нажать «Зарегистрироваться».",
+          "expected": "Регистрация принята; ошибок нет",
+          "testData": "Проверяемое поле: Тип участия; значение: Организатор",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "608a94f7-e462-4262-80d1-5f8d166f1ab1",
+          "action": "Проверить результат и сообщения всех полей.",
+          "expected": "Показан текст «Регистрация принята» и нет ошибок.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [
+        {
+          "workItem": null,
+          "id": "411ad0a3-a7b6-498b-911f-8209e4702e00",
+          "action": "Закрыть страницу или обновить её перед следующим тестом.",
+          "expected": "Данные не отправлены и не сохранены; новая проверка начинается с пустой формы.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "data": {
+        "first": "Артём",
+        "last": "Васильев",
+        "email": "tester@example.org",
+        "age": "40",
+        "phone": "0123456789",
+        "role": "Организатор",
+        "format": "Онлайн",
+        "promo": "DEV2026A"
+      },
+      "status": "Passed"
+    }
+  ],
+  "testPoints": [
+    {
+      "id": "47c44010-5d33-4168-b0d3-1ce0746c84cb",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "ca63297f-75ab-4e4b-984f-7a4ec03d5174",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "4b5495cf-8540-4a6c-830c-d4fc05bc4d47",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "c8b2e86d-2bd1-4093-9d13-c8124a2d367c",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "69b74ea7-8132-405d-902f-b681219d8ddf",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "7fa10fba-a444-4c3b-9025-3960188556f4",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "66513bdd-482c-43cf-8bda-11d8a47f9a31",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "084ef445-2d19-4846-b1db-50ecc2351276",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "918b9603-80d7-45bc-a088-a1533de59c3d",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "7e21fc95-d0c9-4657-850f-a6636c46f978",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "1a6465d2-e4da-41cb-974c-853fa9e7f99a",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "65617674-afba-4afd-8504-c17d517fb191",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "2a4c8430-4986-4948-9597-2fe063f52f09",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "62739cdf-804f-40dc-948f-aa63860ce3e6",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "73da41a7-37ce-4020-9c4f-039916fc9be0",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "4fba7c7c-0e31-4e6e-91b5-bdd201db67f1",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "bb0b49bf-29bc-445b-be70-bbd3917a9254",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "31c93298-6b1d-4ac7-84ac-c8618c59c01e",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "d6934882-fb54-48c2-81c9-5b87ea89b767",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "36ccc09c-214f-4fe1-a80f-56f40e7d3a4c",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "824b5f75-1476-4ce7-9596-0ef9112f1591",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "5d504508-7ad8-46de-a04f-21ce1a8835a6",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "3af8f18d-840b-45a9-8e6d-cf1148c0b6f3",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "5913870b-c5fa-4dfd-91a4-d6d0d8c0c7e0",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "af3d4d47-d993-4e49-a036-854f0c5773ee",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "2dcb4048-5e85-4ae6-ae23-3c10324cdcce",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "b5371a74-a05c-4cf5-8918-776808ebfcbf",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "c188de2d-51c2-4717-ae42-495cbbe047be",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "407ad8ff-db19-4e3c-bf44-78f410049611",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "2478b042-a310-4e99-94e1-86ad1921c6b2",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "fb13e812-e623-45c0-8c85-03ef9dbb3787",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "d79ad402-893a-4bf6-a70f-dbf44a215ed0",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "a613376e-262f-401d-8fa1-7a2478d70156",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "6bdd1a3f-4d7d-4850-b5cf-96983f074980",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "ec08eb24-45a3-4e8a-bfb9-c456021e1c29",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "911037fa-d9c2-4e97-8026-5d87c72c9635",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "ee63731b-93ea-422d-81e6-ca3f6a2ca906",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "f35ff79e-e176-4e22-b1b6-5d264a97529f",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "b6d4500b-d290-4c44-b321-927b16511f5f",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "e4780121-b279-4e80-b08f-0d9e1fe458c2",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "ab769935-560b-4991-9705-171984c5c278",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "5d8191bf-abe1-4889-89b5-9e30be58b3ae",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "03725f55-b173-4b44-b3a5-e92239e5d579",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "5e300205-b24e-4497-8600-fcab78c30bd9",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "ea8ed397-fd66-4f6b-9a5b-3dbbfd3d669a",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "78b3cd39-efe0-469e-ae28-b5bc530aba67",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "1f10c99f-52bf-407e-9164-028bfa3513cd",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "74e1e926-fed1-42b1-93f5-5d7813e2021f",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "4ba41070-cb3e-4ac0-afe4-36a1b00d47eb",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "55e1320c-ab80-4ccb-85b7-5f2b3c5ed04e",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "a35a6fc0-8f01-40a2-af7d-723f56c3bcc9",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "dca4a389-8a0d-4dd1-9ebb-05bc002dfb83",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "7efbe70a-ceb0-4dc7-93f4-00289210e878",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "59959241-56f5-4936-a966-e7f47dae5020",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "c6431ec9-4555-4272-a062-38fca9f26c54",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "467ed250-8a88-4440-acc1-cc03f7c00211",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "24df7d2d-8d7d-4ade-bd12-43b5870465f2",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "cf6b5486-8f1b-409f-b37a-e43f05c0ea0a",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "e455f554-8001-46c1-8448-2f63a0bbb5e5",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "59b189d8-37d4-4b12-9dc6-16bf39c74f3b",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    }
+  ],
+  "results": [
+    {
+      "matrixId": "L5-017",
+      "id": "4b5495cf-8540-4a6c-830c-d4fc05bc4d47",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:52:58.512Z. Матрица L5-017. Фактический результат: Регистрация принята: Артём Васильев, Слушатель, Онлайн, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "78a89465-e5b7-4d84-a702-ba3dfe6567ac",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "f7e86b4b-96ca-4657-af4f-e03afb49ae66",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "67294a62-72c3-4f86-a052-8678ea88c4e9",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-018",
+      "id": "7fa10fba-a444-4c3b-9025-3960188556f4",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:52:58.584Z. Матрица L5-018. Фактический результат: Регистрация отклонена. Исправьте отмеченные поля.. Ошибки: {'age': 'Возраст должен быть целым числом от 18 до 80'}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "e57915f5-40ec-49f4-82ab-29b303ed2199",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "cb77face-61cf-408b-9a51-df3eb64fc479",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "d103be76-e470-4ba2-8f20-adbeb51956e4",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-019",
+      "id": "918b9603-80d7-45bc-a088-a1533de59c3d",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:52:58.660Z. Матрица L5-019. Фактический результат: Регистрация отклонена. Исправьте отмеченные поля.. Ошибки: {'age': 'Возраст должен быть целым числом от 18 до 80'}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "7853e07f-31cc-44f7-b703-8f3d343cb518",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "d5751f4b-3c5a-4f60-9ac3-b3d0005fb006",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "12206dcd-c97a-4b8d-a6a0-18765c637644",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-020",
+      "id": "65617674-afba-4afd-8504-c17d517fb191",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:52:58.733Z. Матрица L5-020. Фактический результат: Регистрация отклонена. Исправьте отмеченные поля.. Ошибки: {'age': 'Возраст должен быть целым числом от 18 до 80'}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "10ec4a5d-8187-4e42-b5ce-38ca414a3163",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "74d64f31-f3de-4e8e-8e48-d08246438ccb",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "edb90302-81ca-4a6b-8a03-e1aae806ad29",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-021",
+      "id": "73da41a7-37ce-4020-9c4f-039916fc9be0",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:52:58.804Z. Матрица L5-021. Фактический результат: Регистрация отклонена. Исправьте отмеченные поля.. Ошибки: {'age': 'Возраст должен быть целым числом от 18 до 80'}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "6daef49f-e9c1-44dd-b2f4-5e3fc90b298a",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "10dac698-e6f1-4a46-9c58-0543629772f2",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "c9017925-28b4-414f-8d70-8af7530c0418",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-023",
+      "id": "31c93298-6b1d-4ac7-84ac-c8618c59c01e",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:52:58.938Z. Матрица L5-023. Фактический результат: Регистрация принята: Артём Васильев, Слушатель, Онлайн, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "480c8966-25eb-48a9-abed-823a70903a4a",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "11bd331f-f7c6-4183-ac29-dd9b153ab253",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "2bc814a7-8897-474f-bb6c-60d5fda4a2dc",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-024",
+      "id": "824b5f75-1476-4ce7-9596-0ef9112f1591",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:52:58.998Z. Матрица L5-024. Фактический результат: Регистрация отклонена. Исправьте отмеченные поля.. Ошибки: {'email': 'Введите корректный Email'}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "4a0691ba-aef0-42f0-ac8e-dcafe9473935",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "bdb03788-d6b8-4e80-b74b-be52d7b058d5",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "a86503cb-5be4-4fba-9c40-382c3e55fedd",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-025",
+      "id": "5913870b-c5fa-4dfd-91a4-d6d0d8c0c7e0",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:52:59.140Z. Матрица L5-025. Фактический результат: Регистрация отклонена. Исправьте отмеченные поля.. Ошибки: {'email': 'Введите корректный Email'}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "33ca47a9-1836-4661-a46e-ac8873e3a096",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "d15a17a5-6b72-40e5-bb0f-f64f6582c6b0",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "bf8a2db7-539b-4c95-8ea7-f389f3971545",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-061",
+      "id": "b5371a74-a05c-4cf5-8918-776808ebfcbf",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:01.670Z. Матрица L5-061. Фактический результат: Регистрация отклонена. Исправьте отмеченные поля.. Ошибки: {'age': 'Возраст должен быть целым числом от 18 до 80'}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "c0a896cd-39fd-4543-ae44-cb4880d8b438",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "67170509-164d-43a2-8179-548324c3715d",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "1bc260d7-8644-4030-b01b-3816bb30816e",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-062",
+      "id": "2478b042-a310-4e99-94e1-86ad1921c6b2",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:01.799Z. Матрица L5-062. Фактический результат: Регистрация принята: Артём Васильев, Слушатель, Онлайн, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "a260635f-593e-4178-87a3-841c3a55b70c",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "c4250fcf-1dbb-45e7-aeb8-45841812332d",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "f07c8aa8-dd2c-450a-9564-8412d5631743",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-063",
+      "id": "a613376e-262f-401d-8fa1-7a2478d70156",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:01.925Z. Матрица L5-063. Фактический результат: Регистрация принята: Артём Васильев, Слушатель, Онлайн, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "54b47146-e534-4c95-bcc2-a4f0d990c745",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "c3e34a7e-b8e1-464e-8ec1-1f070c218f61",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "c2be83ab-24d3-458d-ad0e-f630024b77f7",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-064",
+      "id": "911037fa-d9c2-4e97-8026-5d87c72c9635",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:02.044Z. Матрица L5-064. Фактический результат: Регистрация принята: Артём Васильев, Слушатель, Онлайн, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "0f2d5a2f-183f-48a1-b7f7-d76a51795a03",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "9b3b93e1-8a33-4fd7-8f1e-30e6ba728d56",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "503f3177-3508-4423-acd9-e8612f5f8f4a",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-065",
+      "id": "b6d4500b-d290-4c44-b321-927b16511f5f",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:02.165Z. Матрица L5-065. Фактический результат: Регистрация принята: Артём Васильев, Слушатель, Онлайн, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "1da779dd-3285-4ae7-826f-271dc747e2b9",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "bf5c1472-528a-4e73-bcaa-8f0f2e248ca7",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "443a9215-e07d-4fc2-a874-b65bb0d3b4b1",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-066",
+      "id": "5d8191bf-abe1-4889-89b5-9e30be58b3ae",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:02.284Z. Матрица L5-066. Фактический результат: Регистрация отклонена. Исправьте отмеченные поля.. Ошибки: {'age': 'Возраст должен быть целым числом от 18 до 80'}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "d57573d7-a7a5-4f6a-b6de-c5919ea4d129",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "7d98cd30-9df5-4f0f-8eed-b4ab33d8cc3a",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "30a6acbd-73b4-461d-9793-78e6455d46b3",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-073",
+      "id": "ea8ed397-fd66-4f6b-9a5b-3dbbfd3d669a",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:02.827Z. Матрица L5-073. Фактический результат: Регистрация принята: Артём Васильев, Докладчик, Очно, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "6aa0b523-bf04-49d3-976a-a2c8b40e4da2",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "03ec1683-e0be-4f27-8b30-a8a075e32f5c",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "c4284505-ca8f-40e9-a20a-d112ec480160",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-074",
+      "id": "74e1e926-fed1-42b1-93f5-5d7813e2021f",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:02.954Z. Матрица L5-074. Фактический результат: Регистрация принята: Артём Васильев, Докладчик, Онлайн, промокод применён. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "89125619-07c3-4708-a0e4-94fe039f519f",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "5e92b871-c787-41d9-941f-9c4f95c3593e",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "0769e3c9-4877-4b69-87f6-b2cc7a837caa",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-075",
+      "id": "a35a6fc0-8f01-40a2-af7d-723f56c3bcc9",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:03.094Z. Матрица L5-075. Фактический результат: Регистрация принята: Артём Васильев, Слушатель, Очно, промокод применён. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "4158838f-a9bc-4f65-9c02-f63cc8cf44be",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "b3d91a5d-25b6-42f4-b9bc-fbf5ddaf844d",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "77a134ea-5933-49d6-96b5-845db899fec1",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-076",
+      "id": "59959241-56f5-4936-a966-e7f47dae5020",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:03.240Z. Матрица L5-076. Фактический результат: Регистрация принята: Артём Васильев, Слушатель, Онлайн, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "6402b0c2-dfca-48f3-9398-c491a833472a",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "c31d21ea-d6db-4a39-a9bd-cfe30bfcd4d9",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "ced70681-b27e-44e7-b5a4-5037d1a9d0d8",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-077",
+      "id": "24df7d2d-8d7d-4ade-bd12-43b5870465f2",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:03.391Z. Матрица L5-077. Фактический результат: Регистрация принята: Артём Васильев, Организатор, Очно, промокод не указан. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "9f421c30-f6c1-40a0-951e-79e32697b3a5",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "a240a145-99e7-4fa0-8a60-de5a2088c321",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "6b6881d3-d2c9-43e8-a680-c5185fa2fe39",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    },
+    {
+      "matrixId": "L5-078",
+      "id": "59b189d8-37d4-4b12-9dc6-16bf39c74f3b",
+      "outcome": "Passed",
+      "comment": "Браузерная автоматизация 2026-10-09T18:53:03.521Z. Матрица L5-078. Фактический результат: Регистрация принята: Артём Васильев, Организатор, Онлайн, промокод применён. Учебная заявка не отправлена.. Ошибки: {}. Доказательства: DarkDan81/TPO, Материалы проверок/Лабораторная 5/results.json. Длительность ручного выполнения не измерялась.",
+      "stepResults": [
+        {
+          "stepId": "d0c7b757-f9ec-4aa3-8609-3d6b1a71983f",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "620da34e-f544-4673-9ea7-b23c73199e50",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "608a94f7-e462-4262-80d1-5f8d166f1ab1",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ]
+    }
+  ],
+  "structuredFields": {
+    "Цель": "Проверить восемь полей формы тремя техниками тест-дизайна.",
+    "Объём": "78 браузерных проверок: ЭК, ГЗ, Pairwise. В TMS: 8 ЭК, 6 ГЗ возраста, 6 Pairwise.",
+    "Окружение": "Windows 11 Pro, версия 10.0.22631, сборка 22631; настольный компьютер; Chromium 139.0.7258.5, headless; Playwright 1.51.1; видимая область браузера 1366 × 900 CSS px; масштаб 100%, коэффициент пикселей 1; язык en-US; часовой пояс Europe/Moscow.",
+    "Критерии входа": "Макет доступен, требования и ожидания подготовлены.",
+    "Критерии выхода": "Все 20 кейсов исполнены; результаты, скриншоты и экспорт сохранены.",
+    "Подход": "Обновить форму, заполнить все поля конкретными данными, отправить, сравнить принятие и ошибки с независимым ожиданием.",
+    "Ограничения": "Учебный клиентский макет без backend; не проверяются доставка заявок, безопасность, нагрузка и другие браузеры."
+  }
+}

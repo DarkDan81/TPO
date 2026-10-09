@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DevMeet — учебная регистрация</title>
+<style>body{margin:0;background:#eff3f8;color:#17253d;font:16px system-ui}main{max-width:900px;margin:35px auto;padding:0 24px}.tag{color:#425de1;font-weight:700}h1{font-size:32px;margin:8px 0}p{line-height:1.5;color:#526179}form{background:white;border-radius:18px;padding:28px;box-shadow:0 8px 30px #23345512}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}label{display:block;font-weight:600}input,select{box-sizing:border-box;width:100%;margin-top:8px;padding:11px;border:1px solid #bcc6d4;border-radius:8px;font:inherit}small{display:block;font-weight:400;color:#526179;font-size:12px;margin-top:4px}.error{color:#b92339;font-size:13px;min-height:18px;margin-top:4px;font-weight:400}[aria-invalid=true]{border-color:#b92339}button{margin-top:18px;background:#425de1;border:0;color:white;border-radius:9px;padding:13px 24px;font:inherit;cursor:pointer}#result{margin-top:18px;line-height:1.6}.success{color:#176747}.failure{color:#b92339}@media(max-width:600px){.grid{grid-template-columns:1fr}main{margin:20px auto}}</style>
+<main><div class="tag">DEVMEET · УЧЕБНЫЙ МАКЕТ</div><h1>Встреча разработчиков</h1><p>Мастер-классы, доклады и знакомство с командой. Выберите роль и формат участия.<br>Форма для лабораторной работы №5. Данные не отправляются и не сохраняются.</p>
+<form novalidate><div class="grid">
+<label>Имя<input name="first" autocomplete="given-name"><small>От 2 до 50 букв; дефис разрешён</small><div class="error" id="first-error"></div></label>
+<label>Фамилия<input name="last" autocomplete="family-name"><small>От 2 до 50 букв; дефис разрешён</small><div class="error" id="last-error"></div></label>
+<label>Email<input name="email" type="text" inputmode="email"><small>Обязательный адрес вида name@example.org</small><div class="error" id="email-error"></div></label>
+<label>Возраст<input name="age" type="text" inputmode="numeric"><small>Целое число от 18 до 80 включительно</small><div class="error" id="age-error"></div></label>
+<label>Телефон<input name="phone" type="text" inputmode="tel"><small>Ровно 10 цифр без кода страны</small><div class="error" id="phone-error"></div></label>
+<label>Тип участия<select name="role"><option value="">Выберите роль</option><option>Докладчик</option><option>Слушатель</option><option>Организатор</option></select><small>Одна из трёх ролей</small><div class="error" id="role-error"></div></label>
+<fieldset style="border:0;margin:0;padding:0"><legend style="font-weight:600">Формат участия</legend><label style="display:inline-block;margin:12px 15px 9px 0"><input style="width:auto;margin:0 7px 0 0" type="radio" name="format" value="Очно">Очно</label><label style="display:inline-block"><input style="width:auto;margin:0 7px 0 0" type="radio" name="format" value="Онлайн">Онлайн</label><small>Один из двух форматов</small><div class="error" id="format-error"></div></fieldset>
+<label>Промокод<input name="promo"><small>Необязательно; пусто или 8 латинских букв и цифр</small><div class="error" id="promo-error"></div></label>
+</div><button type="submit">Зарегистрироваться</button><div id="result" role="status" aria-live="polite"></div></form></main>
+<script>
+const form=document.querySelector('form');
+form.addEventListener('submit',event=>{event.preventDefault();const d={format:'',...Object.fromEntries(new FormData(form))};const errors={};
+for(const key of ['first','last'])if(!/^[\p{L}-]{2,50}$/u.test(d[key]))errors[key]='Нужно от 2 до 50 букв или дефисов';
+if(!/^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?)+$/.test(d.email))errors.email='Введите корректный Email';
+if(!/^\d+$/.test(d.age)||Number(d.age)<18||Number(d.age)>80)errors.age='Возраст должен быть целым числом от 18 до 80';
+if(!/^\d{10}$/.test(d.phone))errors.phone='Телефон должен содержать ровно 10 цифр';
+if(!['Докладчик','Слушатель','Организатор'].includes(d.role))errors.role='Выберите тип участия';
+if(!['Очно','Онлайн'].includes(d.format))errors.format='Выберите формат участия';
+if(d.promo!==''&&!/^[A-Za-z0-9]{8}$/.test(d.promo))errors.promo='Промокод должен содержать 8 латинских букв или цифр';
+for(const key of Object.keys(d)){document.getElementById(key+'-error').textContent=errors[key]||'';form.querySelectorAll(`[name="${key}"]`).forEach(el=>el.setAttribute('aria-invalid',Boolean(errors[key])));}
+const result=document.getElementById('result');result.className=Object.keys(errors).length?'failure':'success';result.textContent=Object.keys(errors).length?'Регистрация отклонена. Исправьте отмеченные поля.':`Регистрация принята: ${d.first} ${d.last}, ${d.role}, ${d.format}, промокод ${d.promo?'применён':'не указан'}. Учебная заявка не отправлена.`;
+});
+</script></html>

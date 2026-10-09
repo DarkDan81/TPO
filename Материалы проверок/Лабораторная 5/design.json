@@ -1,0 +1,1632 @@
+[
+  {
+    "id": "L5-001",
+    "tech": "ЭК",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Буквы от 2 до 50",
+    "value": "Артём",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-002",
+    "tech": "ЭК",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Буквы и дефис",
+    "value": "Анна-Мария",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Анна-Мария",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-003",
+    "tech": "ЭК",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Пустое обязательное",
+    "value": "",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Имя»",
+    "data": {
+      "first": "",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-004",
+    "tech": "ЭК",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Меньше 2",
+    "value": "А",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Имя»",
+    "data": {
+      "first": "А",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-005",
+    "tech": "ЭК",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Больше 50",
+    "value": "ААААААААААААААААААААААААААААААААААААААААААААААААААА",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Имя»",
+    "data": {
+      "first": "ААААААААААААААААААААААААААААААААААААААААААААААААААА",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-006",
+    "tech": "ЭК",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Цифры",
+    "value": "А2",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Имя»",
+    "data": {
+      "first": "А2",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-007",
+    "tech": "ЭК",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Пробел",
+    "value": "Анна Мария",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Имя»",
+    "data": {
+      "first": "Анна Мария",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-008",
+    "tech": "ЭК",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Другие символы",
+    "value": "А@",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Имя»",
+    "data": {
+      "first": "А@",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-009",
+    "tech": "ЭК",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Буквы от 2 до 50",
+    "value": "Артём",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Артём",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-010",
+    "tech": "ЭК",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Буквы и дефис",
+    "value": "Анна-Мария",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Анна-Мария",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-011",
+    "tech": "ЭК",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Пустое обязательное",
+    "value": "",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Фамилия»",
+    "data": {
+      "first": "Артём",
+      "last": "",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-012",
+    "tech": "ЭК",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Меньше 2",
+    "value": "А",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Фамилия»",
+    "data": {
+      "first": "Артём",
+      "last": "А",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-013",
+    "tech": "ЭК",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Больше 50",
+    "value": "ААААААААААААААААААААААААААААААААААААААААААААААААААА",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Фамилия»",
+    "data": {
+      "first": "Артём",
+      "last": "ААААААААААААААААААААААААААААААААААААААААААААААААААА",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-014",
+    "tech": "ЭК",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Цифры",
+    "value": "А2",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Фамилия»",
+    "data": {
+      "first": "Артём",
+      "last": "А2",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-015",
+    "tech": "ЭК",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Пробел",
+    "value": "Анна Мария",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Фамилия»",
+    "data": {
+      "first": "Артём",
+      "last": "Анна Мария",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-016",
+    "tech": "ЭК",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Другие символы",
+    "value": "А@",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Фамилия»",
+    "data": {
+      "first": "Артём",
+      "last": "А@",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-017",
+    "tech": "ЭК",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Целое от 18 до 80",
+    "value": "40",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Позитивный",
+    "title": "ЭК: Возраст — Целое от 18 до 80"
+  },
+  {
+    "id": "L5-018",
+    "tech": "ЭК",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Меньше 18",
+    "value": "15",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "15",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Негативный",
+    "title": "ЭК: Возраст — Меньше 18"
+  },
+  {
+    "id": "L5-019",
+    "tech": "ЭК",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Больше 80",
+    "value": "90",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "90",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Негативный",
+    "title": "ЭК: Возраст — Больше 80"
+  },
+  {
+    "id": "L5-020",
+    "tech": "ЭК",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Пустое",
+    "value": "",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Негативный",
+    "title": "ЭК: Возраст — Пустое"
+  },
+  {
+    "id": "L5-021",
+    "tech": "ЭК",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Нечисловое",
+    "value": "abc",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "abc",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Негативный",
+    "title": "ЭК: Возраст — Нечисловое"
+  },
+  {
+    "id": "L5-022",
+    "tech": "ЭК",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Дробное",
+    "value": "40.5",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40.5",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-023",
+    "tech": "ЭК",
+    "field": "Email",
+    "key": "email",
+    "cls": "Корректный адрес",
+    "value": "tester@example.org",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Позитивный",
+    "title": "ЭК: Email — Корректный адрес"
+  },
+  {
+    "id": "L5-024",
+    "tech": "ЭК",
+    "field": "Email",
+    "key": "email",
+    "cls": "Пустое обязательное",
+    "value": "",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Email»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Негативный",
+    "title": "ЭК: Email — Пустое обязательное"
+  },
+  {
+    "id": "L5-025",
+    "tech": "ЭК",
+    "field": "Email",
+    "key": "email",
+    "cls": "Нет @",
+    "value": "tester.example.org",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Email»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester.example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Негативный",
+    "title": "ЭК: Email — Нет @"
+  },
+  {
+    "id": "L5-026",
+    "tech": "ЭК",
+    "field": "Email",
+    "key": "email",
+    "cls": "Нет домена",
+    "value": "tester@",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Email»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-027",
+    "tech": "ЭК",
+    "field": "Email",
+    "key": "email",
+    "cls": "Пробел",
+    "value": "test er@example.org",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Email»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "test er@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-028",
+    "tech": "ЭК",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "10 цифр с начальным нулём",
+    "value": "0123456789",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-029",
+    "tech": "ЭК",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "Пустое",
+    "value": "",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Телефон»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-030",
+    "tech": "ЭК",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "Меньше 10 цифр",
+    "value": "123456789",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Телефон»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-031",
+    "tech": "ЭК",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "Больше 10 цифр",
+    "value": "12345678901",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Телефон»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "12345678901",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-032",
+    "tech": "ЭК",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "Буква вместо цифры",
+    "value": "123456789a",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Телефон»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "123456789a",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-033",
+    "tech": "ЭК",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "Код страны со знаком +",
+    "value": "+7123456789",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Телефон»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "+7123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-034",
+    "tech": "ЭК",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Допустимое значение",
+    "value": "Докладчик",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Докладчик",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-035",
+    "tech": "ЭК",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Допустимое значение",
+    "value": "Слушатель",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-036",
+    "tech": "ЭК",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Допустимое значение",
+    "value": "Организатор",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Организатор",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-037",
+    "tech": "ЭК",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Значение не выбрано",
+    "value": "",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Тип участия»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-038",
+    "tech": "ЭК",
+    "field": "Формат участия",
+    "key": "format",
+    "cls": "Допустимое значение",
+    "value": "Очно",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Очно",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-039",
+    "tech": "ЭК",
+    "field": "Формат участия",
+    "key": "format",
+    "cls": "Допустимое значение",
+    "value": "Онлайн",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-040",
+    "tech": "ЭК",
+    "field": "Формат участия",
+    "key": "format",
+    "cls": "Значение не выбрано",
+    "value": "",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Формат участия»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-041",
+    "tech": "ЭК",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "Необязательное пустое",
+    "value": "",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-042",
+    "tech": "ЭК",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "8 латинских букв и цифр",
+    "value": "DEV2026A",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "DEV2026A"
+    }
+  },
+  {
+    "id": "L5-043",
+    "tech": "ЭК",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "8 латинских букв",
+    "value": "ABCDEFGH",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "ABCDEFGH"
+    }
+  },
+  {
+    "id": "L5-044",
+    "tech": "ЭК",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "8 цифр",
+    "value": "12345678",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "12345678"
+    }
+  },
+  {
+    "id": "L5-045",
+    "tech": "ЭК",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "Меньше 8",
+    "value": "DEV2026",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Промокод»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "DEV2026"
+    }
+  },
+  {
+    "id": "L5-046",
+    "tech": "ЭК",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "Больше 8",
+    "value": "DEV2026AB",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Промокод»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "DEV2026AB"
+    }
+  },
+  {
+    "id": "L5-047",
+    "tech": "ЭК",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "Кириллица",
+    "value": "АБВГДЕЖЗ",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Промокод»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "АБВГДЕЖЗ"
+    }
+  },
+  {
+    "id": "L5-048",
+    "tech": "ЭК",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "Символ вне алфавита",
+    "value": "DEV2026!",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Промокод»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "DEV2026!"
+    }
+  },
+  {
+    "id": "L5-049",
+    "tech": "ГЗ",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Длина 1",
+    "value": "А",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Имя»",
+    "data": {
+      "first": "А",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-050",
+    "tech": "ГЗ",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Длина 2",
+    "value": "АА",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "АА",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-051",
+    "tech": "ГЗ",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Длина 3",
+    "value": "ААА",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "ААА",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-052",
+    "tech": "ГЗ",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Длина 49",
+    "value": "ААААААААААААААААААААААААААААААААААААААААААААААААА",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "ААААААААААААААААААААААААААААААААААААААААААААААААА",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-053",
+    "tech": "ГЗ",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Длина 50",
+    "value": "АААААААААААААААААААААААААААААААААААААААААААААААААА",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "АААААААААААААААААААААААААААААААААААААААААААААААААА",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-054",
+    "tech": "ГЗ",
+    "field": "Имя",
+    "key": "first",
+    "cls": "Длина 51",
+    "value": "ААААААААААААААААААААААААААААААААААААААААААААААААААА",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Имя»",
+    "data": {
+      "first": "ААААААААААААААААААААААААААААААААААААААААААААААААААА",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-055",
+    "tech": "ГЗ",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Длина 1",
+    "value": "А",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Фамилия»",
+    "data": {
+      "first": "Артём",
+      "last": "А",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-056",
+    "tech": "ГЗ",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Длина 2",
+    "value": "АА",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "АА",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-057",
+    "tech": "ГЗ",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Длина 3",
+    "value": "ААА",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "ААА",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-058",
+    "tech": "ГЗ",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Длина 49",
+    "value": "ААААААААААААААААААААААААААААААААААААААААААААААААА",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "ААААААААААААААААААААААААААААААААААААААААААААААААА",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-059",
+    "tech": "ГЗ",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Длина 50",
+    "value": "АААААААААААААААААААААААААААААААААААААААААААААААААА",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "АААААААААААААААААААААААААААААААААААААААААААААААААА",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-060",
+    "tech": "ГЗ",
+    "field": "Фамилия",
+    "key": "last",
+    "cls": "Длина 51",
+    "value": "ААААААААААААААААААААААААААААААААААААААААААААААААААА",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Фамилия»",
+    "data": {
+      "first": "Артём",
+      "last": "ААААААААААААААААААААААААААААААААААААААААААААААААААА",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-061",
+    "tech": "ГЗ",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Возраст 17",
+    "value": "17",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "17",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Граничный",
+    "title": "ГЗ: Возраст — Возраст 17"
+  },
+  {
+    "id": "L5-062",
+    "tech": "ГЗ",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Возраст 18",
+    "value": "18",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "18",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Граничный",
+    "title": "ГЗ: Возраст — Возраст 18"
+  },
+  {
+    "id": "L5-063",
+    "tech": "ГЗ",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Возраст 19",
+    "value": "19",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "19",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Граничный",
+    "title": "ГЗ: Возраст — Возраст 19"
+  },
+  {
+    "id": "L5-064",
+    "tech": "ГЗ",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Возраст 79",
+    "value": "79",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "79",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Граничный",
+    "title": "ГЗ: Возраст — Возраст 79"
+  },
+  {
+    "id": "L5-065",
+    "tech": "ГЗ",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Возраст 80",
+    "value": "80",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "80",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Граничный",
+    "title": "ГЗ: Возраст — Возраст 80"
+  },
+  {
+    "id": "L5-066",
+    "tech": "ГЗ",
+    "field": "Возраст",
+    "key": "age",
+    "cls": "Возраст 81",
+    "value": "81",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Возраст»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "81",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Граничный",
+    "title": "ГЗ: Возраст — Возраст 81"
+  },
+  {
+    "id": "L5-067",
+    "tech": "ГЗ",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "Длина 9 цифр",
+    "value": "011111111",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Телефон»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "011111111",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-068",
+    "tech": "ГЗ",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "Длина 10 цифр",
+    "value": "0111111111",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0111111111",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-069",
+    "tech": "ГЗ",
+    "field": "Телефон",
+    "key": "phone",
+    "cls": "Длина 11 цифр",
+    "value": "01111111111",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Телефон»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "01111111111",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    }
+  },
+  {
+    "id": "L5-070",
+    "tech": "ГЗ",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "Длина 7",
+    "value": "AAAAAAA",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Промокод»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "AAAAAAA"
+    }
+  },
+  {
+    "id": "L5-071",
+    "tech": "ГЗ",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "Длина 8",
+    "value": "AAAAAAAA",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "AAAAAAAA"
+    }
+  },
+  {
+    "id": "L5-072",
+    "tech": "ГЗ",
+    "field": "Промокод",
+    "key": "promo",
+    "cls": "Длина 9",
+    "value": "AAAAAAAAA",
+    "valid": false,
+    "expected": "Регистрация отклонена; ошибка поля «Промокод»",
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": "AAAAAAAAA"
+    }
+  },
+  {
+    "id": "L5-073",
+    "tech": "Pairwise",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Докладчик / Очно / Без промокода",
+    "value": "Докладчик",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "overrides": {
+      "role": "Докладчик",
+      "format": "Очно",
+      "promo": ""
+    },
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Докладчик",
+      "format": "Очно",
+      "promo": ""
+    },
+    "type": "Позитивный",
+    "title": "Pairwise: Докладчик / Очно / Без промокода"
+  },
+  {
+    "id": "L5-074",
+    "tech": "Pairwise",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Докладчик / Онлайн / С промокодом",
+    "value": "Докладчик",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "overrides": {
+      "role": "Докладчик",
+      "format": "Онлайн",
+      "promo": "DEV2026A"
+    },
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Докладчик",
+      "format": "Онлайн",
+      "promo": "DEV2026A"
+    },
+    "type": "Позитивный",
+    "title": "Pairwise: Докладчик / Онлайн / С промокодом"
+  },
+  {
+    "id": "L5-075",
+    "tech": "Pairwise",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Слушатель / Очно / С промокодом",
+    "value": "Слушатель",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "overrides": {
+      "role": "Слушатель",
+      "format": "Очно",
+      "promo": "DEV2026A"
+    },
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Очно",
+      "promo": "DEV2026A"
+    },
+    "type": "Позитивный",
+    "title": "Pairwise: Слушатель / Очно / С промокодом"
+  },
+  {
+    "id": "L5-076",
+    "tech": "Pairwise",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Слушатель / Онлайн / Без промокода",
+    "value": "Слушатель",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "overrides": {
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Слушатель",
+      "format": "Онлайн",
+      "promo": ""
+    },
+    "type": "Позитивный",
+    "title": "Pairwise: Слушатель / Онлайн / Без промокода"
+  },
+  {
+    "id": "L5-077",
+    "tech": "Pairwise",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Организатор / Очно / Без промокода",
+    "value": "Организатор",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "overrides": {
+      "role": "Организатор",
+      "format": "Очно",
+      "promo": ""
+    },
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Организатор",
+      "format": "Очно",
+      "promo": ""
+    },
+    "type": "Позитивный",
+    "title": "Pairwise: Организатор / Очно / Без промокода"
+  },
+  {
+    "id": "L5-078",
+    "tech": "Pairwise",
+    "field": "Тип участия",
+    "key": "role",
+    "cls": "Организатор / Онлайн / С промокодом",
+    "value": "Организатор",
+    "valid": true,
+    "expected": "Регистрация принята; ошибок нет",
+    "overrides": {
+      "role": "Организатор",
+      "format": "Онлайн",
+      "promo": "DEV2026A"
+    },
+    "data": {
+      "first": "Артём",
+      "last": "Васильев",
+      "email": "tester@example.org",
+      "age": "40",
+      "phone": "0123456789",
+      "role": "Организатор",
+      "format": "Онлайн",
+      "promo": "DEV2026A"
+    },
+    "type": "Позитивный",
+    "title": "Pairwise: Организатор / Онлайн / С промокодом"
+  }
+]

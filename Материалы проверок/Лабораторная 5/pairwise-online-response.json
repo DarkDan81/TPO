@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09T18:56:42.007Z",
+  "source": "https://pairwise.teremokgames.com/",
+  "responses": [
+    {
+      "url": "https://pairwise.teremokgames.com/src/php/pairwise4.php",
+      "status": 200,
+      "text": "{\"download\":\"1wr46vmsb6bb45279d677fb6a74a37ad7ea5ee86\",\"count\":\"6\",\"countAll\":\"12\"}"
+    },
+    {
+      "url": "https://pairwise.teremokgames.com/src/php/pairwise4.php",
+      "status": 200,
+      "text": "{\"download\":\"69ep1cppa47e0ec6da8cbdc1f7666fdfbde07a7b\",\"count\":\"6\",\"countAll\":\"12\"}"
+    }
+  ]
+}
