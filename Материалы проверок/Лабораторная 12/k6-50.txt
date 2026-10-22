@@ -1,10 +1,10 @@
 time="2026-10-22T11:59:22+03:00" level=warning msg="There were unknown fields in the options exported in the script" error="json: unknown field \"gracefulStop\""
 
-         /\      Grafana   /‾‾/  
-    /\  /  \     |\  __   /  /   
-   /  \/    \    | |/ /  /   ‾‾\ 
+         /\      Grafana   /‾‾/
+    /\  /  \     |\  __   /  /
+   /  \/    \    | |/ /  /   ‾‾\
   /          \   |   (  |  (‾)  |
- / __________ \  |_|\_\  \_____/ 
+ / __________ \  |_|\_\  \_____/
 
 
      execution: local
@@ -106,7 +106,7 @@ running (0m30.0s), 50/50 VUs, 700 complete and 0 interrupted iterations
 default   [ 100% ] 50 VUs  30.0s/30s
 
 
-  █ THRESHOLDS 
+  █ THRESHOLDS
 
     http_req_duration
     ✓ 'p(95)<10000' p(95)=2.59ms
@@ -133,7 +133,7 @@ default   [ 100% ] 50 VUs  30.0s/30s
     ✓ 'count>0' count=750
 
 
-  █ TOTAL RESULTS 
+  █ TOTAL RESULTS
 
     checks_total.......: 1500    49.88121/s
     checks_succeeded...: 100.00% 1500 out of 1500
@@ -155,7 +155,7 @@ default   [ 100% ] 50 VUs  30.0s/30s
       { endpoint:search }..........: 750    24.940605/s
 
     EXECUTION
-    iteration_duration.............: avg=2s       min=2s med=2s       max=2.03s   p(90)=2s     p(95)=2s    
+    iteration_duration.............: avg=2s       min=2s med=2s       max=2.03s   p(90)=2s     p(95)=2s
     iterations.....................: 750    24.940605/s
     vus............................: 50     min=50        max=50
     vus_max........................: 50     min=50        max=50

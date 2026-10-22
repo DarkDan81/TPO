@@ -1,10 +1,10 @@
 time="2026-10-22T11:52:22+03:00" level=warning msg="There were unknown fields in the options exported in the script" error="json: unknown field \"gracefulStop\""
 
-         /\      Grafana   /‾‾/  
-    /\  /  \     |\  __   /  /   
-   /  \/    \    | |/ /  /   ‾‾\ 
+         /\      Grafana   /‾‾/
+    /\  /  \     |\  __   /  /
+   /  \/    \    | |/ /  /   ‾‾\
   /          \   |   (  |  (‾)  |
- / __________ \  |_|\_\  \_____/ 
+ / __________ \  |_|\_\  \_____/
 
 
      execution: local
@@ -106,7 +106,7 @@ running (0m30.0s), 10/10 VUs, 140 complete and 0 interrupted iterations
 default   [ 100% ] 10 VUs  30.0s/30s
 
 
-  █ THRESHOLDS 
+  █ THRESHOLDS
 
     http_req_duration
     ✓ 'p(95)<10000' p(95)=2.03ms
@@ -133,7 +133,7 @@ default   [ 100% ] 10 VUs  30.0s/30s
     ✓ 'count>0' count=150
 
 
-  █ TOTAL RESULTS 
+  █ TOTAL RESULTS
 
     checks_total.......: 300     9.968299/s
     checks_succeeded...: 100.00% 300 out of 300
@@ -143,10 +143,10 @@ default   [ 100% ] 10 VUs  30.0s/30s
     ✓ chat: status 200
 
     HTTP
-    http_req_duration..............: avg=2.56ms   min=0s med=522.9µs  max=55.73ms p(90)=1.77ms p(95)=2.03ms 
-      { endpoint:chat }............: avg=808.78µs min=0s med=526.4µs  max=2.66ms  p(90)=1.85ms p(95)=2.03ms 
+    http_req_duration..............: avg=2.56ms   min=0s med=522.9µs  max=55.73ms p(90)=1.77ms p(95)=2.03ms
+      { endpoint:chat }............: avg=808.78µs min=0s med=526.4µs  max=2.66ms  p(90)=1.85ms p(95)=2.03ms
       { endpoint:search }..........: avg=4.33ms   min=0s med=521.29µs max=55.73ms p(90)=1.53ms p(95)=55.55ms
-      { expected_response:true }...: avg=2.56ms   min=0s med=522.9µs  max=55.73ms p(90)=1.77ms p(95)=2.03ms 
+      { expected_response:true }...: avg=2.56ms   min=0s med=522.9µs  max=55.73ms p(90)=1.77ms p(95)=2.03ms
     http_req_failed................: 0.00%  0 out of 300
       { endpoint:chat }............: 0.00%  0 out of 150
       { endpoint:search }..........: 0.00%  0 out of 150
@@ -155,7 +155,7 @@ default   [ 100% ] 10 VUs  30.0s/30s
       { endpoint:search }..........: 150    4.98415/s
 
     EXECUTION
-    iteration_duration.............: avg=2s       min=2s med=2s       max=2.06s   p(90)=2s     p(95)=2.06s  
+    iteration_duration.............: avg=2s       min=2s med=2s       max=2.06s   p(90)=2s     p(95)=2.06s
     iterations.....................: 150    4.98415/s
     vus............................: 10     min=10       max=10
     vus_max........................: 10     min=10       max=10
