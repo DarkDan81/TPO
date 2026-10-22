@@ -1,0 +1,14 @@
+--- a/net/Controllers/ChatController.cs
++++ b/net/Controllers/ChatController.cs
+@@ -41,0 +42,9 @@
++    if (Environment.GetEnvironmentVariable("KNOWBASE_LAB_MOCK") == "true"
++        && Request.Headers["X-Lab-Mode"] == "mock")
++    {
++      return Ok(new ChatResponseDto
++      {
++        Answer = "Учебный ответ MOCK: нагрузочное тестирование проверяет поведение системы при заданной нагрузке.",
++        DocumentIds = new List<string>()
++      });
++    }
+@@ -68 +77 @@
+-}+}

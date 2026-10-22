@@ -1,0 +1,50 @@
+[
+  {
+    "vus": 10,
+    "operation": "Поиск",
+    "rps": 4.984149573664152,
+    "p95ms": 55.5591,
+    "errorRate": 0,
+    "count": 150
+  },
+  {
+    "vus": 10,
+    "operation": "Чат MOCK",
+    "rps": 4.984149573664152,
+    "p95ms": 2.0359,
+    "errorRate": 0,
+    "count": 150
+  },
+  {
+    "vus": 20,
+    "operation": "Поиск",
+    "rps": 9.985988027752352,
+    "p95ms": 3.6822200000000236,
+    "errorRate": 0,
+    "count": 300
+  },
+  {
+    "vus": 20,
+    "operation": "Чат MOCK",
+    "rps": 9.985988027752352,
+    "p95ms": 1.186,
+    "errorRate": 0,
+    "count": 300
+  },
+  {
+    "vus": 50,
+    "operation": "Поиск",
+    "rps": 24.94060494694305,
+    "p95ms": 3.3383,
+    "errorRate": 0,
+    "count": 750
+  },
+  {
+    "vus": 50,
+    "operation": "Чат MOCK",
+    "rps": 24.94060494694305,
+    "p95ms": 1.5606,
+    "errorRate": 0,
+    "count": 750
+  }
+]

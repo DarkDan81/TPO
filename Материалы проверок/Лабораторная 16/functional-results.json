@@ -1,0 +1,729 @@
+{
+  "date": "2026-10-22T12:11:19.411902",
+  "rows": [
+    {
+      "id": "FT16-01",
+      "name": "Вход с верным паролем",
+      "block": "Авторизация",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/users/login",
+      "request": {
+        "identifier": "labteam_a",
+        "password": "[СКРЫТО]"
+      },
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "response": {
+        "accessToken": "[СКРЫТО]",
+        "username": "labteam_a",
+        "email": "labteam_a@example.test"
+      },
+      "status": "Passed",
+      "ms": 54.87
+    },
+    {
+      "id": "FT16-02",
+      "name": "Вход с неверным паролем",
+      "block": "Авторизация",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/users/login",
+      "request": {
+        "identifier": "labteam_a",
+        "password": "[СКРЫТО]"
+      },
+      "expected": "HTTP 400",
+      "actual": "HTTP 400",
+      "response": "Bad credentials",
+      "status": "Passed",
+      "ms": 63.65
+    },
+    {
+      "id": "FT16-03",
+      "name": "Вход с пустыми данными",
+      "block": "Авторизация",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/users/login",
+      "request": {
+        "identifier": "",
+        "password": "[СКРЫТО]"
+      },
+      "expected": "HTTP 400",
+      "actual": "HTTP 400",
+      "response": "Missing parameters",
+      "status": "Passed",
+      "ms": 1.17
+    },
+    {
+      "id": "FT16-04",
+      "name": "Список статей без входа",
+      "block": "Авторизация",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages",
+      "request": null,
+      "expected": "HTTP 401",
+      "actual": "HTTP 401",
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-bb1566e1e643eec107f005865aa7f4a2-79fa93460aa96108-00"
+      },
+      "status": "Passed",
+      "ms": 11.55
+    },
+    {
+      "id": "FT16-05",
+      "name": "Создание статьи",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/pages/new",
+      "request": {
+        "id": 0,
+        "userId": 0,
+        "title": "LAB16 Итоговая статья",
+        "content": "Исходный текст команды",
+        "categoryId": 1
+      },
+      "expected": "HTTP 201",
+      "actual": "HTTP 201",
+      "response": {
+        "id": 28,
+        "title": "LAB16 Итоговая статья",
+        "content": "Исходный текст команды",
+        "categoryId": 1,
+        "categoryName": null,
+        "keywords": [],
+        "userId": 5,
+        "displayName": "Команда К3440 К3441 К3439",
+        "isIndexed": false
+      },
+      "status": "Passed",
+      "ms": 4.59
+    },
+    {
+      "id": "FT16-06",
+      "name": "Чтение созданной статьи",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/28",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 28,
+        "title": "LAB16 Итоговая статья",
+        "content": "Исходный текст команды",
+        "categoryId": 1,
+        "categoryName": null,
+        "keywords": [],
+        "userId": 5,
+        "displayName": "Команда К3440 К3441 К3439",
+        "isIndexed": false
+      },
+      "status": "Passed",
+      "ms": 0.97
+    },
+    {
+      "id": "FT16-07",
+      "name": "Изменение своей статьи",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "PUT /api/v1/pages/28",
+      "request": {
+        "id": 28,
+        "userId": 5,
+        "title": "LAB16 Обновлено",
+        "content": "Изменённый текст команды",
+        "categoryId": 1
+      },
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 28,
+        "title": "LAB16 Обновлено",
+        "content": "Изменённый текст команды",
+        "categoryId": 1,
+        "categoryName": null,
+        "keywords": [],
+        "userId": 5,
+        "displayName": "Команда К3440 К3441 К3439",
+        "isIndexed": false
+      },
+      "status": "Passed",
+      "ms": 6.37
+    },
+    {
+      "id": "FT16-08",
+      "name": "Сохранение изменённого текста",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/28",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 28,
+        "title": "LAB16 Обновлено",
+        "content": "Изменённый текст команды",
+        "categoryId": 1,
+        "categoryName": null,
+        "keywords": [],
+        "userId": 5,
+        "displayName": "Команда К3440 К3441 К3439",
+        "isIndexed": false
+      },
+      "status": "Passed",
+      "ms": 0.98
+    },
+    {
+      "id": "FT16-09",
+      "name": "Редактирование статьи другим User",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "PUT /api/v1/pages/28",
+      "request": {
+        "id": 28,
+        "userId": 5,
+        "title": "LAB16 Попытка B",
+        "content": "Не должно сохраниться",
+        "categoryId": 1
+      },
+      "expected": "HTTP 403",
+      "actual": "HTTP 403",
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.4",
+        "title": "Forbidden",
+        "status": 403,
+        "traceId": "00-42c6587ed9e025a8a44ad38760d8e295-379b26bfeb8b4a64-00"
+      },
+      "status": "Passed",
+      "ms": 2.27
+    },
+    {
+      "id": "FT16-10",
+      "name": "Статья не изменилась после отказа",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/28",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 28,
+        "title": "LAB16 Обновлено",
+        "content": "Изменённый текст команды",
+        "categoryId": 1,
+        "categoryName": null,
+        "keywords": [],
+        "userId": 5,
+        "displayName": "Команда К3440 К3441 К3439",
+        "isIndexed": false
+      },
+      "status": "Passed",
+      "ms": 0.84
+    },
+    {
+      "id": "FT16-11",
+      "name": "Добавление комментария",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/pages/28/comments",
+      "request": "LAB16 Комментарий A",
+      "expected": "HTTP 201",
+      "actual": "HTTP 201",
+      "response": {
+        "id": 29,
+        "text": "LAB16 Комментарий A",
+        "userId": 5,
+        "createdAt": "2026-10-22T09:11:19.206316Z",
+        "userName": null
+      },
+      "status": "Passed",
+      "ms": 27.38
+    },
+    {
+      "id": "FT16-12",
+      "name": "Сохранение комментария",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/28/comments",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": [
+        {
+          "id": 29,
+          "text": "LAB16 Комментарий A",
+          "userId": 5,
+          "createdAt": "2026-10-22T09:11:19.206316Z",
+          "userName": null
+        }
+      ],
+      "status": "Passed",
+      "ms": 1.38
+    },
+    {
+      "id": "FT16-13",
+      "name": "Изменение своего комментария",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "PUT /api/v1/pages/28/comments/29",
+      "request": "LAB16 Изменено A",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 29,
+        "text": "LAB16 Изменено A",
+        "userId": 5,
+        "createdAt": "2026-10-22T09:11:19.206316Z",
+        "userName": null
+      },
+      "status": "Passed",
+      "ms": 12.58
+    },
+    {
+      "id": "FT16-14",
+      "name": "Чужое изменение комментария отклонено",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "PUT /api/v1/pages/28/comments/29",
+      "request": "LAB16 Попытка B",
+      "expected": "HTTP 403",
+      "actual": "HTTP 403",
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.4",
+        "title": "Forbidden",
+        "status": 403,
+        "traceId": "00-94fa4471d51ea8e74e8a46b18a1ed1a9-04b86a953dc58d12-00"
+      },
+      "status": "Passed",
+      "ms": 1.47
+    },
+    {
+      "id": "FT16-15",
+      "name": "Комментарий сохранил текст владельца",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/28/comments",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": [
+        {
+          "id": 29,
+          "text": "LAB16 Изменено A",
+          "userId": 5,
+          "createdAt": "2026-10-22T09:11:19.206316Z",
+          "userName": null
+        }
+      ],
+      "status": "Passed",
+      "ms": 1.08
+    },
+    {
+      "id": "FT16-16",
+      "name": "Пустой комментарий отклонён",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/pages/28/comments",
+      "request": "   ",
+      "expected": "HTTP 400",
+      "actual": "HTTP 400",
+      "response": "Comment text cannot be empty",
+      "status": "Passed",
+      "ms": 1.12
+    },
+    {
+      "id": "FT16-17",
+      "name": "Чтение отсутствующей статьи",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/2147483647",
+      "request": null,
+      "expected": "HTTP 404",
+      "actual": "HTTP 404",
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.5",
+        "title": "Not Found",
+        "status": 404,
+        "traceId": "00-6eed3b7baf3bc1c201e2aadcbc7b296e-5a4a1c9395384690-00"
+      },
+      "status": "Passed",
+      "ms": 2.93
+    },
+    {
+      "id": "FT16-18",
+      "name": "Контракт создания без id и userId",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/pages/new",
+      "request": {
+        "title": "LAB16 Контракт",
+        "content": "Текст",
+        "categoryId": 1
+      },
+      "expected": "HTTP 201",
+      "actual": "HTTP 400",
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "One or more validation errors occurred.",
+        "status": 400,
+        "errors": {
+          "$": [
+            "JSON deserialization for type 'edu.testing.api.Models.Dtos.PageDto' was missing required properties including: 'id', 'userId'."
+          ],
+          "pageDto": [
+            "The pageDto field is required."
+          ]
+        },
+        "traceId": "00-7fc2e5b0c05f23d75370420d409f20cf-fd919e7ceb04738d-00"
+      },
+      "status": "Failed",
+      "ms": 4.31
+    },
+    {
+      "id": "FT16-19",
+      "name": "Список своих статей",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/my",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": {
+        "pages": [
+          {
+            "id": 9,
+            "title": "LAB9 Проверка API",
+            "content": "Учебная статья команды для проверки статей и комментариев.",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [
+              "LAB9"
+            ],
+            "userId": 5,
+            "displayName": "Команда К3440 К3441 К3439",
+            "isIndexed": false
+          },
+          {
+            "id": 22,
+            "title": "LAB9 Проверка API",
+            "content": "Учебная статья команды для проверки статей и комментариев.",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [
+              "LAB9"
+            ],
+            "userId": 5,
+            "displayName": "Команда К3440 К3441 К3439",
+            "isIndexed": false
+          },
+          {
+            "id": 25,
+            "title": "Учебный регламент проекта Атлас",
+            "content": "Проект Атлас: резервные копии создаются ежедневно в 02:00 по московскому времени. Срок хранения резервных копий проекта Атлас — 14 календарных дней. Восстановление резервной копии согласует руководитель проекта. Учебный регламент не устанавливает стоимость подписки и размер компенсаций.",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [],
+            "userId": 5,
+            "displayName": "Команда К3440 К3441 К3439",
+            "isIndexed": false
+          },
+          {
+            "id": 26,
+            "title": "Учебный регламент проекта Вега",
+            "content": "Проект Вега: резервные копии создаются ежедневно в 03:00 по московскому времени. Срок хранения резервных копий проекта Вега — 30 календарных дней. Восстановление резервной копии согласует руководитель проекта. Эти правила относятся только к учебному проекту Вега.",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [],
+            "userId": 5,
+            "displayName": "Команда К3440 К3441 К3439",
+            "isIndexed": false
+          },
+          {
+            "id": 27,
+            "title": "Учебный регламент поддержки",
+            "content": "Служба поддержки проектов Атлас и Вега работает по будням с 09:00 до 18:00 по московскому времени. Для обращения с приоритетом P1 срок первого ответа — 30 минут в рабочее время. Для приоритета P2 срок первого ответа — 4 рабочих часа. В выходные обращения регистрируются, обработка начинается в следующий рабочий день. Регламент не содержит сведений о победителях спортивных соревнований.",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [],
+            "userId": 5,
+            "displayName": "Команда К3440 К3441 К3439",
+            "isIndexed": false
+          },
+          {
+            "id": 28,
+            "title": "LAB16 Обновлено",
+            "content": "Изменённый текст команды",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [],
+            "userId": 5,
+            "displayName": "Команда К3440 К3441 К3439",
+            "isIndexed": false
+          }
+        ],
+        "total": 6
+      },
+      "status": "Passed",
+      "ms": 9.2
+    },
+    {
+      "id": "FT16-20",
+      "name": "Чтение своего профиля",
+      "block": "Личный кабинет",
+      "priority": "Medium",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/users/profile/me",
+      "request": null,
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 6,
+        "userId": 5,
+        "displayName": "Команда К3440 К3441 К3439",
+        "login": "labteam_a",
+        "role": 1
+      },
+      "status": "Passed",
+      "ms": 1.72
+    },
+    {
+      "id": "FT16-21",
+      "name": "Изменение своего имени",
+      "block": "Личный кабинет",
+      "priority": "Medium",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "PUT /api/v1/users/profile",
+      "request": {
+        "id": 6,
+        "userId": 5,
+        "displayName": "Команда итоговая проверка",
+        "login": "labteam_a",
+        "role": 1
+      },
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 6,
+        "userId": 5,
+        "displayName": "Команда итоговая проверка",
+        "login": "labteam_a",
+        "role": 0
+      },
+      "status": "Passed",
+      "ms": 9.64
+    },
+    {
+      "id": "FT16-22",
+      "name": "Имя сохранено после повторного чтения",
+      "block": "Личный кабинет",
+      "priority": "Medium",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/users/profile/me",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 6,
+        "userId": 5,
+        "displayName": "Команда итоговая проверка",
+        "login": "labteam_a",
+        "role": 1
+      },
+      "status": "Passed",
+      "ms": 1.53
+    },
+    {
+      "id": "FT16-23",
+      "name": "Изменение профиля A пользователем B",
+      "block": "Личный кабинет",
+      "priority": "Medium",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "PUT /api/v1/users/profile",
+      "request": {
+        "id": 6,
+        "userId": 5,
+        "displayName": "Не должно сохраниться",
+        "login": "labteam_a",
+        "role": 1
+      },
+      "expected": "HTTP 403",
+      "actual": "HTTP 403",
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.4",
+        "title": "Forbidden",
+        "status": 403,
+        "traceId": "00-3ea85c5a176daf5c3712c57981deb271-56b4a648ccc03ccf-00"
+      },
+      "status": "Passed",
+      "ms": 1.62
+    },
+    {
+      "id": "FT16-24",
+      "name": "Неверный текущий пароль отклонён",
+      "block": "Личный кабинет",
+      "priority": "Medium",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/users/change-password",
+      "request": {
+        "email": "labteam_a@example.test",
+        "currentPassword": "[СКРЫТО]",
+        "newPassword": "[СКРЫТО]"
+      },
+      "expected": "HTTP 400",
+      "actual": "HTTP 400",
+      "response": {
+        "UNKNOWN": [
+          "Invalid current password"
+        ],
+        "fingerprint": "",
+        "fingerprintBack": "e97b6b37335cc1087e44d146d8e74e602c446fd34b47a6b7f6347801745b761a",
+        "signatureValid": false
+      },
+      "status": "Passed",
+      "ms": 81.36
+    },
+    {
+      "id": "FT16-25",
+      "name": "Поиск своей статьи",
+      "block": "Поиск и теги",
+      "priority": "Medium",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/search?categoryId=1&search=LAB16&fuzzySearch=false",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": {
+        "pages": [
+          {
+            "id": 28,
+            "title": "LAB16 Обновлено",
+            "content": "Изменённый текст команды",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [],
+            "userId": 5,
+            "displayName": "Команда итоговая проверка",
+            "isIndexed": false
+          }
+        ],
+        "total": 1
+      },
+      "status": "Passed",
+      "ms": 1.42
+    },
+    {
+      "id": "FT16-26",
+      "name": "Добавление тега",
+      "block": "Поиск и теги",
+      "priority": "Medium",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "POST /api/v1/pages/28/keywords",
+      "request": "lab16-tag",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "response": {
+        "id": 30,
+        "text": "lab16-tag",
+        "usageCount": 0
+      },
+      "status": "Passed",
+      "ms": 8.49
+    },
+    {
+      "id": "FT16-27",
+      "name": "Удаление тега",
+      "block": "Поиск и теги",
+      "priority": "Medium",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "DELETE /api/v1/pages/28/keywords",
+      "request": "lab16-tag",
+      "expected": "HTTP 204",
+      "actual": "HTTP 204",
+      "response": null,
+      "status": "Passed",
+      "ms": 32.42
+    },
+    {
+      "id": "FT16-28",
+      "name": "Удаление своего комментария",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "DELETE /api/v1/pages/28/comments/29",
+      "request": null,
+      "expected": "HTTP 204",
+      "actual": "HTTP 204",
+      "response": null,
+      "status": "Passed",
+      "ms": 7.16
+    },
+    {
+      "id": "FT16-29",
+      "name": "Комментарий отсутствует после удаления",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/28/comments",
+      "request": null,
+      "expected": "HTTP 200; корректное содержимое и состояние",
+      "actual": "HTTP 200",
+      "response": [],
+      "status": "Passed",
+      "ms": 1.39
+    },
+    {
+      "id": "FT16-30",
+      "name": "Удаление своей статьи",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "DELETE /api/v1/pages/28",
+      "request": null,
+      "expected": "HTTP 204",
+      "actual": "HTTP 204",
+      "response": null,
+      "status": "Passed",
+      "ms": 20.08
+    },
+    {
+      "id": "FT16-31",
+      "name": "Удалённая статья недоступна",
+      "block": "Статьи и комментарии API",
+      "priority": "High",
+      "precondition": "Локальный KnowBase 1.0.0; собственные учебные объекты; роли User.",
+      "steps": "GET /api/v1/pages/28",
+      "request": null,
+      "expected": "HTTP 404",
+      "actual": "HTTP 404",
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.5",
+        "title": "Not Found",
+        "status": 404,
+        "traceId": "00-4862df5e6e4f1352f2cffe6a03bbdff4-272695aab057a31e-00"
+      },
+      "status": "Passed",
+      "ms": 1.17
+    }
+  ]
+}

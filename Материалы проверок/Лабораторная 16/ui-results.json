@@ -1,0 +1,157 @@
+{
+  "rows": [
+    {
+      "id": "UI16-01",
+      "name": "Главная страница",
+      "block": "Интерфейс",
+      "priority": "Medium",
+      "precondition": "Авторизованный User; локальный KnowBase.",
+      "steps": "Открыть /",
+      "expected": "Основное содержимое доступно; нет необработанных ошибок JavaScript.",
+      "actual": "KnowBase\nГлавная\nСтатьи\nОблако тегов\nЛичный кабинет\nКатегории\nBackend: 1.0.0\nFrontend: 1.0.0\nКоманда итоговая проверка (labteam_a)\nВыйти\nГлавная\nДобро пожаловать в корпоративный портал знаний.",
+      "status": "Passed"
+    },
+    {
+      "id": "UI16-02",
+      "name": "Список статей",
+      "block": "Интерфейс",
+      "priority": "Medium",
+      "precondition": "Авторизованный User; локальный KnowBase.",
+      "steps": "Открыть /articles",
+      "expected": "Основное содержимое доступно; нет необработанных ошибок JavaScript.",
+      "actual": "KnowBase\nГлавная\nСтатьи\nОблако тегов\nЛичный кабинет\nКатегории\nBackend: 1.0.0\nFrontend: 1.0.0\nКоманда итоговая проверка (labteam_a)\nВыйти\nСтатьи\nСоздать статью\nHome\nWelcome to our website\nЧитать далее →\nAbout\nLearn more about us\nЧитать далее →\nContact\nGet in touch with us\nЧитать далее →\nLAB9 Проверка API\nУчебная статья команды для проверки статей и комментариев.\nАвтор: Команда итоговая проверка\n#LAB9\nЧитать далее →\nLAB9 Проверка API\nУчебная статья команды для проверки статей и комментариев.\nАвтор: Команда итоговая проверка\n#LAB9\nЧитать далее →\n1\n2",
+      "status": "Passed"
+    },
+    {
+      "id": "UI16-03",
+      "name": "Кабинет без авторизации",
+      "block": "Интерфейс",
+      "priority": "High",
+      "precondition": "Новая сессия без входа.",
+      "steps": "Открыть /profile.",
+      "expected": "Переход на /login.",
+      "actual": "https://127.0.0.1:5173/login",
+      "status": "Passed"
+    },
+    {
+      "id": "UI16-04",
+      "name": "Пустой запрос клавишей Enter",
+      "block": "Интерфейс",
+      "priority": "Medium",
+      "precondition": "Пустой новый диалог.",
+      "steps": "Не вводить текст; нажать Enter в поле чата.",
+      "expected": "Запрос не отправляется; пустое сообщение не появляется.",
+      "actual": "POST /api/v1/chat → 400; Query cannot be empty",
+      "status": "Failed",
+      "bugId": "KB-UI-01"
+    }
+  ],
+  "errors": [],
+  "network": [
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages?pageNumber=1&pageSize=5",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages?pageNumber=1&pageSize=5",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/chat",
+      "method": "POST",
+      "status": 400
+    }
+  ]
+}

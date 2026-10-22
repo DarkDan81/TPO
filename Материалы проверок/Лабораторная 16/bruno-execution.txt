@@ -1,0 +1,110 @@
+Articles\01 (200 OK) - 16 ms
+Assertions
+   ✓ res.status: eq 200
+Articles\02 (401 Unauthorized) - 4 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\03 (200 OK) - 2 ms
+Assertions
+   ✓ res.status: eq 200
+Articles\04 (401 Unauthorized) - 1 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\05 (200 OK) - 2 ms
+Assertions
+   ✓ res.status: eq 200
+Articles\06 (401 Unauthorized) - 2 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\07 (200 OK) - 2 ms
+Assertions
+   ✓ res.status: eq 200
+Articles\08 (401 Unauthorized) - 2 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\09 (201 Created) - 3 ms
+Assertions
+   ✓ res.status: eq 201
+Articles\10 (401 Unauthorized) - 2 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\11 (200 OK) - 2 ms
+Assertions
+   ✓ res.status: eq 200
+Articles\12 (401 Unauthorized) - 2 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\13 (200 OK) - 3 ms
+Assertions
+   ✓ res.status: eq 200
+Articles\14 (401 Unauthorized) - 2 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\15 (204 No Content) - 3 ms
+Assertions
+   ✓ res.status: eq 204
+Articles\16 (401 Unauthorized) - 1 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\27 (204 No Content) - 2 ms
+Assertions
+   ✓ res.status: eq 204
+Articles\28 (401 Unauthorized) - 1 ms
+Assertions
+   ✓ res.status: eq 401
+Articles\29 (404 Not Found) - 1 ms
+Assertions
+   ✓ res.status: eq 404
+Articles\31 (400 Bad Request) - 1 ms
+Assertions
+   ✕ res.status: eq 201
+      expected 400 to equal 201
+Comments\17 (200 OK) - 1 ms
+Assertions
+   ✓ res.status: eq 200
+Comments\18 (401 Unauthorized) - 1 ms
+Assertions
+   ✓ res.status: eq 401
+Comments\19 (201 Created) - 11 ms
+Assertions
+   ✓ res.status: eq 201
+Comments\20 (401 Unauthorized) - 2 ms
+Assertions
+   ✓ res.status: eq 401
+Comments\21 (200 OK) - 2 ms
+Assertions
+   ✓ res.status: eq 200
+Comments\22 (401 Unauthorized) - 1 ms
+Assertions
+   ✓ res.status: eq 401
+Comments\23 (403 Forbidden) - 1 ms
+Assertions
+   ✓ res.status: eq 403
+Comments\24 (200 OK) - 1 ms
+Assertions
+   ✓ res.status: eq 200
+Comments\25 (204 No Content) - 3 ms
+Assertions
+   ✓ res.status: eq 204
+Comments\26 (401 Unauthorized) - 2 ms
+Assertions
+   ✓ res.status: eq 401
+Comments\30 (400 Bad Request) - 2 ms
+Assertions
+   ✓ res.status: eq 400
+
+📊 Execution Summary
+┌───────────────┬──────────────────────────┐
+│ Metric        │          Result          │
+├───────────────┼──────────────────────────┤
+│ Status        │          ✗ FAIL          │
+├───────────────┼──────────────────────────┤
+│ Requests      │ 31 (30 Passed, 1 Failed) │
+├───────────────┼──────────────────────────┤
+│ Tests         │           0/0            │
+├───────────────┼──────────────────────────┤
+│ Assertions    │          30/31           │
+├───────────────┼──────────────────────────┤
+│ Duration (ms) │           500            │
+└───────────────┴──────────────────────────┘
+Wrote json results to D:\Syncthing\Projects\CODE\учеба\4курс\Тестирование ПО\.work\bruno9-raw.json
