@@ -1,0 +1,23 @@
+meta {
+  name: Создание по Swagger без необязательных id и userId
+  type: http
+  seq: 31
+}
+
+post {
+  url: {{baseUrl}}/api/v1/pages/new
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+body:json {
+  {"title": "LAB9 Контракт", "content": "Текст", "categoryId": 1}
+}
+
+assert {
+  res.status: eq 201
+}

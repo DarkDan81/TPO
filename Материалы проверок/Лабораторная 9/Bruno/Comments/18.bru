@@ -1,0 +1,15 @@
+meta {
+  name: Список комментариев без авторизации
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{baseUrl}}/api/v1/pages/9/comments
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 401
+}

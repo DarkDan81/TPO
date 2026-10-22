@@ -1,0 +1,23 @@
+meta {
+  name: Удаление тега
+  type: http
+  seq: 15
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/pages/{{tempId}}/keywords
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+body:json {
+  "lab9-tag"
+}
+
+assert {
+  res.status: eq 204
+}

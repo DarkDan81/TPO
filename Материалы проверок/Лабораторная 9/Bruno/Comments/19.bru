@@ -1,0 +1,27 @@
+meta {
+  name: Создание комментария
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{baseUrl}}/api/v1/pages/9/comments
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+body:json {
+  "LAB9-A-команда"
+}
+
+assert {
+  res.status: eq 201
+}
+
+script:post-response {
+  bru.setVar("commentAId", res.body.id);
+}

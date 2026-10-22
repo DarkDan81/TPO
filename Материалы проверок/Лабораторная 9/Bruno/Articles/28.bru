@@ -1,0 +1,15 @@
+meta {
+  name: Удаление статьи без авторизации
+  type: http
+  seq: 28
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/pages/{{tempId}}
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 401
+}

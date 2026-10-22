@@ -1,0 +1,19 @@
+meta {
+  name: Изменение комментария без авторизации
+  type: http
+  seq: 22
+}
+
+put {
+  url: {{baseUrl}}/api/v1/pages/9/comments/{{commentAId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  "LAB9-A-изменено"
+}
+
+assert {
+  res.status: eq 401
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Создание статьи
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/api/v1/pages/new
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+body:json {
+  {"id": 0, "userId": 0, "title": "LAB9 Временная статья", "content": "Проверка CRUD", "categoryId": 1}
+}
+
+assert {
+  res.status: eq 201
+}
+
+script:post-response {
+  bru.setVar("tempId", res.body.id);
+}

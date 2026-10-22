@@ -1,0 +1,15 @@
+meta {
+  name: Поиск статьи без авторизации
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/api/v1/pages/search?categoryId=1&search=LAB9&fuzzySearch=false
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 401
+}

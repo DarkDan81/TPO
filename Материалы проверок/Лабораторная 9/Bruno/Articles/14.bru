@@ -1,0 +1,19 @@
+meta {
+  name: Добавление тега без авторизации
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/api/v1/pages/{{tempId}}/keywords
+  body: json
+  auth: none
+}
+
+body:json {
+  "lab9-tag"
+}
+
+assert {
+  res.status: eq 401
+}

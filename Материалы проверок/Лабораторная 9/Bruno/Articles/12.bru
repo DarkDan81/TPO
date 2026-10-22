@@ -1,0 +1,19 @@
+meta {
+  name: Изменение статьи без авторизации
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/api/v1/pages/{{tempId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {"id": 12, "userId": 5, "title": "LAB9 Изменено", "content": "Новый текст", "categoryId": 1}
+}
+
+assert {
+  res.status: eq 401
+}

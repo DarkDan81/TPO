@@ -1,0 +1,603 @@
+{
+  "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+  "section": {
+    "attachments": [],
+    "preconditionSteps": [],
+    "postconditionSteps": [],
+    "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+    "parentId": "0d76ddd7-2f3e-41bc-b839-7488674a49d1",
+    "isDeleted": false,
+    "id": "e16d6092-ad5a-4d9b-abc0-f2c9b225fc8b",
+    "createdDate": "2026-10-22T08:49:38.264Z",
+    "modifiedDate": "2026-10-22T08:49:38.264Z",
+    "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+    "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+    "name": "Лабораторная 10. Личный кабинет"
+  },
+  "plan": {
+    "status": "Completed",
+    "startedOn": "2026-10-22T08:49:41.06Z",
+    "completedOn": "2026-10-22T08:49:42.213Z",
+    "createdDate": "2026-10-22T08:49:39.549Z",
+    "modifiedDate": "2026-10-22T08:49:42.213Z",
+    "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+    "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+    "globalId": 72,
+    "isDeleted": false,
+    "lockedDate": null,
+    "id": "08614d2a-6a61-42de-9630-ee5fa4c6dedc",
+    "lockedById": null,
+    "tags": [],
+    "name": "Лабораторная 10. Личный кабинет KnowBase",
+    "startDate": "2026-10-22T08:49:41.06Z",
+    "endDate": "2026-10-22T18:00:00Z",
+    "description": "Цель: проверить смену имени, отказ смены пароля при неверном текущем пароле и доступ без авторизации. Вне объёма: администрирование, нагрузка и RAG. Критерий выхода: три сценария выполнены, результаты сохранены.",
+    "build": "Backend 1.0.0 Frontend 1.0.0",
+    "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+    "productName": "KnowBase",
+    "hasAutomaticDurationTimer": null,
+    "attributes": {}
+  },
+  "suite": {
+    "id": "a917b88b-4094-4336-881d-3a0996658f57",
+    "refreshDate": null,
+    "parentId": null,
+    "testPlanId": "08614d2a-6a61-42de-9630-ee5fa4c6dedc",
+    "name": "Личный кабинет — три сценария",
+    "type": "Custom",
+    "saveStructure": false,
+    "autoRefresh": false
+  },
+  "items": {
+    "TC10-01": {
+      "id": "6eef8586-d49a-439c-8b82-ed46a232f081",
+      "globalId": 69,
+      "versionId": "6eef8586-d49a-439c-8b82-ed46a232f081",
+      "versionNumber": 1,
+      "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+      "sectionId": "e16d6092-ad5a-4d9b-abc0-f2c9b225fc8b",
+      "name": "Смена имени с сохранением после обновления",
+      "description": "Источник требований: README KnowBase. TC10-01",
+      "sourceType": "Manual",
+      "entityTypeName": "TestCases",
+      "duration": 180000,
+      "medianDuration": 0,
+      "state": "Ready",
+      "priority": "High",
+      "isAutomated": false,
+      "externalId": null,
+      "attributes": {},
+      "tags": [],
+      "sectionPreconditionSteps": [],
+      "sectionPostconditionSteps": [],
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "f9cef670-a23b-46c8-8998-06ae469f3a6f",
+          "action": "Локальный KnowBase 1.0.0 доступен; обычная учебная роль User.",
+          "expected": "Интерфейс https://127.0.0.1:5173 открывается.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "0d883e7c-0edd-4e39-a6a3-2c5fd8da9f7f",
+          "action": "Войти под labteam_a и открыть Личный кабинет → Личные данные.",
+          "expected": "Отображаются данные своей учётной записи.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "58a50fa4-3ad3-4037-a2d4-f92db37d5387",
+          "action": "Нажать Редактировать, ввести ФИО «Команда К3440 К3441 К3439» и сохранить.",
+          "expected": "Сохранение успешно; новое имя отображается.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "f99f76f4-17fb-4d02-b0f7-8cb70c5618be",
+          "action": "Обновить страницу.",
+          "expected": "Имя «Команда К3440 К3441 К3439» сохранено.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [],
+      "iterations": [],
+      "autoTests": [],
+      "manualTestId": null,
+      "autoTestCases": [],
+      "layer": null,
+      "attachments": [],
+      "links": [],
+      "externalIssues": [],
+      "parameters": [],
+      "createdDate": "2026-10-22T08:49:38.458Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedDate": "2026-10-22T08:49:38.458Z",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "isDeleted": false
+    },
+    "TC10-02": {
+      "id": "0e5176cb-7dae-4f49-81cb-00bc63b9664d",
+      "globalId": 70,
+      "versionId": "0e5176cb-7dae-4f49-81cb-00bc63b9664d",
+      "versionNumber": 1,
+      "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+      "sectionId": "e16d6092-ad5a-4d9b-abc0-f2c9b225fc8b",
+      "name": "Смена пароля с неверным текущим паролем",
+      "description": "Источник требований: README KnowBase. TC10-02",
+      "sourceType": "Manual",
+      "entityTypeName": "TestCases",
+      "duration": 180000,
+      "medianDuration": 0,
+      "state": "Ready",
+      "priority": "High",
+      "isAutomated": false,
+      "externalId": null,
+      "attributes": {},
+      "tags": [],
+      "sectionPreconditionSteps": [],
+      "sectionPostconditionSteps": [],
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "7c34cfea-769f-413a-879c-85d7f94eea39",
+          "action": "Локальный KnowBase 1.0.0 доступен; обычная учебная роль User.",
+          "expected": "Интерфейс https://127.0.0.1:5173 открывается.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "b956b422-37b4-4833-877b-810657e6433c",
+          "action": "Войти под labteam_a и открыть Данные авторизации.",
+          "expected": "Отображается форма смены пароля.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "14673caa-cbd1-4cf3-ac77-59db097200b9",
+          "action": "Ввести неверный текущий пароль WrongCurrent2026! и одинаковый новый пароль NewTeam2026! в два поля; нажать Сменить пароль.",
+          "expected": "Запрос отклонён HTTP 400; сообщение об ошибке, успех не показан.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "3ef43343-076e-4b55-a18b-f8df1a4fed60",
+          "action": "В отдельной сессии войти с исходным учебным паролем.",
+          "expected": "Исходный пароль остаётся действительным.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [],
+      "iterations": [],
+      "autoTests": [],
+      "manualTestId": null,
+      "autoTestCases": [],
+      "layer": null,
+      "attachments": [],
+      "links": [],
+      "externalIssues": [],
+      "parameters": [],
+      "createdDate": "2026-10-22T08:49:38.791Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedDate": "2026-10-22T08:49:38.791Z",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "isDeleted": false
+    },
+    "TC10-03": {
+      "id": "506234c3-039c-4039-86c7-8c2000f0b8d3",
+      "globalId": 71,
+      "versionId": "506234c3-039c-4039-86c7-8c2000f0b8d3",
+      "versionNumber": 1,
+      "projectId": "01a0d83f-c23b-7883-9d51-854d8fb70ba9",
+      "sectionId": "e16d6092-ad5a-4d9b-abc0-f2c9b225fc8b",
+      "name": "Доступ к кабинету без авторизации",
+      "description": "Источник требований: README KnowBase. TC10-03",
+      "sourceType": "Manual",
+      "entityTypeName": "TestCases",
+      "duration": 180000,
+      "medianDuration": 0,
+      "state": "Ready",
+      "priority": "High",
+      "isAutomated": false,
+      "externalId": null,
+      "attributes": {},
+      "tags": [],
+      "sectionPreconditionSteps": [],
+      "sectionPostconditionSteps": [],
+      "preconditionSteps": [
+        {
+          "workItem": null,
+          "id": "6f942ae2-63a7-4ac1-974b-24351c56cb38",
+          "action": "Локальный KnowBase 1.0.0 доступен; обычная учебная роль User.",
+          "expected": "Интерфейс https://127.0.0.1:5173 открывается.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "steps": [
+        {
+          "workItem": null,
+          "id": "5a990389-6f84-4877-85e0-b4d67d03055e",
+          "action": "Открыть новую сессию браузера без авторизации.",
+          "expected": "Учётная запись не выбрана.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        },
+        {
+          "workItem": null,
+          "id": "16c17b9b-f79c-491a-826e-b4c5ac6f9156",
+          "action": "Перейти напрямую на https://127.0.0.1:5173/profile.",
+          "expected": "Переход на /login; персональные данные и редактирование недоступны.",
+          "testData": "",
+          "comments": "",
+          "workItemId": null
+        }
+      ],
+      "postconditionSteps": [],
+      "iterations": [],
+      "autoTests": [],
+      "manualTestId": null,
+      "autoTestCases": [],
+      "layer": null,
+      "attachments": [],
+      "links": [],
+      "externalIssues": [],
+      "parameters": [],
+      "createdDate": "2026-10-22T08:49:39.125Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedDate": "2026-10-22T08:49:39.125Z",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "isDeleted": false
+    }
+  },
+  "points": [
+    {
+      "id": "43664934-73e4-4d8e-a7e7-7ff7d6769cb6",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "6eef8586-d49a-439c-8b82-ed46a232f081",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "dffd7e19-366e-496e-8f54-6d7fc82a6f4f",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "e52a3172-b2de-4da5-96c5-624bf199b8ef",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "0e5176cb-7dae-4f49-81cb-00bc63b9664d",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "85dc944e-5a8a-4d30-b9de-1a237355e93a",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    },
+    {
+      "id": "0cb2b3f2-011d-4c5d-a85f-77a7ed93f2c5",
+      "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "workItemId": "506234c3-039c-4039-86c7-8c2000f0b8d3",
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "status": "Passed",
+      "lastTestResultId": "b11c683a-42df-4930-b3ae-c36ca8f70233",
+      "iterationId": "00000000-0000-0000-0000-000000000000",
+      "workItemMedianDuration": null
+    }
+  ],
+  "results": [
+    {
+      "id": "dffd7e19-366e-496e-8f54-6d7fc82a6f4f",
+      "createdDate": "2026-10-22T08:49:41.011Z",
+      "modifiedDate": "2026-10-22T08:49:41.011Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "stepComments": [],
+      "failureClassIds": [],
+      "outcome": "Passed",
+      "status": {
+        "id": "620e141c-577b-465c-ae41-04dcfe757213",
+        "name": "Успешен",
+        "type": "Succeeded",
+        "isSystem": true,
+        "code": "PASSED",
+        "description": null
+      },
+      "comment": "22.10.2026. KnowBase\nГлавная\nСтатьи\nОблако тегов\nЛичный кабинет\nКатегории\nBackend: 1.0.0\nFrontend: 1.0.0\nКоманда К3440 К3441 К3439 (labteam_a)\nВыйти\nЛичный кабинет\nЛичные данные\nМои статьи\nДанные авторизации\nИстория активности\nЛогин\nlabteam_a\nEmail\nlabteam_a@example.test\nФИО\nКоманда К3440 К3441 К3439\nРедактировать",
+      "links": [],
+      "stepResults": [
+        {
+          "stepId": "0d883e7c-0edd-4e39-a6a3-2c5fd8da9f7f",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "58a50fa4-3ad3-4037-a2d4-f92db37d5387",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "f99f76f4-17fb-4d02-b0f7-8cb70c5618be",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ],
+      "attachments": [],
+      "autoTestId": null,
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "startedOn": null,
+      "completedOn": "2026-10-22T08:49:41.011Z",
+      "durationInMs": null,
+      "traces": null,
+      "failureType": null,
+      "message": null,
+      "runByUserId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "stoppedByUserId": null,
+      "testPointId": "43664934-73e4-4d8e-a7e7-7ff7d6769cb6",
+      "testRunId": "0eca050e-cf28-4ba6-8022-236d40dfea5a",
+      "testPoint": {
+        "id": "43664934-73e4-4d8e-a7e7-7ff7d6769cb6",
+        "isDeleted": false,
+        "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+        "iterationId": "00000000-0000-0000-0000-000000000000",
+        "workItemId": "6eef8586-d49a-439c-8b82-ed46a232f081",
+        "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+        "testSuiteId": "a917b88b-4094-4336-881d-3a0996658f57",
+        "status": null,
+        "statusModel": {
+          "id": "620e141c-577b-465c-ae41-04dcfe757213",
+          "name": "Успешен",
+          "type": "Succeeded",
+          "isSystem": true,
+          "code": "PASSED",
+          "description": null
+        },
+        "lastTestResultId": "dffd7e19-366e-496e-8f54-6d7fc82a6f4f"
+      },
+      "autoTest": null,
+      "autoTestStepResults": [],
+      "setupResults": [],
+      "teardownResults": [],
+      "workItemVersionId": "6eef8586-d49a-439c-8b82-ed46a232f081",
+      "workItemVersionNumber": 1,
+      "parameters": {},
+      "properties": {}
+    },
+    {
+      "id": "85dc944e-5a8a-4d30-b9de-1a237355e93a",
+      "createdDate": "2026-10-22T08:49:41.648Z",
+      "modifiedDate": "2026-10-22T08:49:41.648Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "stepComments": [],
+      "failureClassIds": [],
+      "outcome": "Passed",
+      "status": {
+        "id": "620e141c-577b-465c-ae41-04dcfe757213",
+        "name": "Успешен",
+        "type": "Succeeded",
+        "isSystem": true,
+        "code": "PASSED",
+        "description": null
+      },
+      "comment": "22.10.2026. HTTP 400; сообщение HTTP 400 в форме; успех не показан.",
+      "links": [],
+      "stepResults": [
+        {
+          "stepId": "b956b422-37b4-4833-877b-810657e6433c",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "14673caa-cbd1-4cf3-ac77-59db097200b9",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "3ef43343-076e-4b55-a18b-f8df1a4fed60",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ],
+      "attachments": [],
+      "autoTestId": null,
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "startedOn": null,
+      "completedOn": "2026-10-22T08:49:41.648Z",
+      "durationInMs": null,
+      "traces": null,
+      "failureType": null,
+      "message": null,
+      "runByUserId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "stoppedByUserId": null,
+      "testPointId": "e52a3172-b2de-4da5-96c5-624bf199b8ef",
+      "testRunId": "9297a0ea-434f-421e-9e22-8b60a77f5e71",
+      "testPoint": {
+        "id": "e52a3172-b2de-4da5-96c5-624bf199b8ef",
+        "isDeleted": false,
+        "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+        "iterationId": "00000000-0000-0000-0000-000000000000",
+        "workItemId": "0e5176cb-7dae-4f49-81cb-00bc63b9664d",
+        "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+        "testSuiteId": "a917b88b-4094-4336-881d-3a0996658f57",
+        "status": null,
+        "statusModel": {
+          "id": "620e141c-577b-465c-ae41-04dcfe757213",
+          "name": "Успешен",
+          "type": "Succeeded",
+          "isSystem": true,
+          "code": "PASSED",
+          "description": null
+        },
+        "lastTestResultId": "85dc944e-5a8a-4d30-b9de-1a237355e93a"
+      },
+      "autoTest": null,
+      "autoTestStepResults": [],
+      "setupResults": [],
+      "teardownResults": [],
+      "workItemVersionId": "0e5176cb-7dae-4f49-81cb-00bc63b9664d",
+      "workItemVersionNumber": 1,
+      "parameters": {},
+      "properties": {}
+    },
+    {
+      "id": "b11c683a-42df-4930-b3ae-c36ca8f70233",
+      "createdDate": "2026-10-22T08:49:42.17Z",
+      "modifiedDate": "2026-10-22T08:49:42.17Z",
+      "createdById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "modifiedById": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "stepComments": [],
+      "failureClassIds": [],
+      "outcome": "Passed",
+      "status": {
+        "id": "620e141c-577b-465c-ae41-04dcfe757213",
+        "name": "Успешен",
+        "type": "Succeeded",
+        "isSystem": true,
+        "code": "PASSED",
+        "description": null
+      },
+      "comment": "22.10.2026. Переход на https://127.0.0.1:5173/login",
+      "links": [],
+      "stepResults": [
+        {
+          "stepId": "5a990389-6f84-4877-85e0-b4d67d03055e",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        },
+        {
+          "stepId": "16c17b9b-f79c-491a-826e-b4c5ac6f9156",
+          "outcome": "Passed",
+          "sharedStepVersionId": null,
+          "sharedStepResults": [],
+          "comment": null
+        }
+      ],
+      "attachments": [],
+      "autoTestId": null,
+      "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+      "startedOn": null,
+      "completedOn": "2026-10-22T08:49:42.17Z",
+      "durationInMs": null,
+      "traces": null,
+      "failureType": null,
+      "message": null,
+      "runByUserId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+      "stoppedByUserId": null,
+      "testPointId": "0cb2b3f2-011d-4c5d-a85f-77a7ed93f2c5",
+      "testRunId": "35b56aa3-1c9c-4247-89f9-ee1ac0f2f2d5",
+      "testPoint": {
+        "id": "0cb2b3f2-011d-4c5d-a85f-77a7ed93f2c5",
+        "isDeleted": false,
+        "testerId": "01a0d83f-b82f-783d-a5fc-0b9a86bbb729",
+        "iterationId": "00000000-0000-0000-0000-000000000000",
+        "workItemId": "506234c3-039c-4039-86c7-8c2000f0b8d3",
+        "configurationId": "01a0d83f-c28e-7c22-8277-0c9338f64570",
+        "testSuiteId": "a917b88b-4094-4336-881d-3a0996658f57",
+        "status": null,
+        "statusModel": {
+          "id": "620e141c-577b-465c-ae41-04dcfe757213",
+          "name": "Успешен",
+          "type": "Succeeded",
+          "isSystem": true,
+          "code": "PASSED",
+          "description": null
+        },
+        "lastTestResultId": "b11c683a-42df-4930-b3ae-c36ca8f70233"
+      },
+      "autoTest": null,
+      "autoTestStepResults": [],
+      "setupResults": [],
+      "teardownResults": [],
+      "workItemVersionId": "506234c3-039c-4039-86c7-8c2000f0b8d3",
+      "workItemVersionNumber": 1,
+      "parameters": {},
+      "properties": {}
+    }
+  ],
+  "cases": [
+    {
+      "id": "TC10-01",
+      "name": "Смена имени с сохранением после обновления",
+      "steps": [
+        {
+          "action": "Войти под labteam_a и открыть Личный кабинет → Личные данные.",
+          "expected": "Отображаются данные своей учётной записи."
+        },
+        {
+          "action": "Нажать Редактировать, ввести ФИО «Команда К3440 К3441 К3439» и сохранить.",
+          "expected": "Сохранение успешно; новое имя отображается."
+        },
+        {
+          "action": "Обновить страницу.",
+          "expected": "Имя «Команда К3440 К3441 К3439» сохранено."
+        }
+      ]
+    },
+    {
+      "id": "TC10-02",
+      "name": "Смена пароля с неверным текущим паролем",
+      "steps": [
+        {
+          "action": "Войти под labteam_a и открыть Данные авторизации.",
+          "expected": "Отображается форма смены пароля."
+        },
+        {
+          "action": "Ввести неверный текущий пароль WrongCurrent2026! и одинаковый новый пароль NewTeam2026! в два поля; нажать Сменить пароль.",
+          "expected": "Запрос отклонён HTTP 400; сообщение об ошибке, успех не показан."
+        },
+        {
+          "action": "В отдельной сессии войти с исходным учебным паролем.",
+          "expected": "Исходный пароль остаётся действительным."
+        }
+      ]
+    },
+    {
+      "id": "TC10-03",
+      "name": "Доступ к кабинету без авторизации",
+      "steps": [
+        {
+          "action": "Открыть новую сессию браузера без авторизации.",
+          "expected": "Учётная запись не выбрана."
+        },
+        {
+          "action": "Перейти напрямую на https://127.0.0.1:5173/profile.",
+          "expected": "Переход на /login; персональные данные и редактирование недоступны."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Пустой комментарий
+  type: http
+  seq: 30
+}
+
+post {
+  url: {{baseUrl}}/api/v1/pages/9/comments
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+body:json {
+  "   "
+}
+
+assert {
+  res.status: eq 400
+}

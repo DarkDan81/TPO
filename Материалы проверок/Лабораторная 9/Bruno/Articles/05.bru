@@ -1,0 +1,19 @@
+meta {
+  name: Свои статьи
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/api/v1/pages/my
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+assert {
+  res.status: eq 200
+}

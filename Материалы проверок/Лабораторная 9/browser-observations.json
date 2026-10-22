@@ -1,0 +1,246 @@
+{
+  "browser": "139.0.7258.5",
+  "network": [
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages?pageNumber=1&pageSize=5",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages?pageNumber=1&pageSize=5",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9/comments",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9/comments",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9/comments",
+      "status": 201,
+      "method": "POST"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/5",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/info/version",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/category",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9/comments",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9/comments",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/5",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/users/profile/5",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9/comments/16",
+      "status": 200,
+      "method": "PUT"
+    },
+    {
+      "url": "https://127.0.0.1:5173/api/v1/pages/9/comments/16",
+      "status": 204,
+      "method": "DELETE"
+    }
+  ],
+  "errors": []
+}

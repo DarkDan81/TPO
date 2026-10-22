@@ -1,0 +1,19 @@
+meta {
+  name: Поиск статьи
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/api/v1/pages/search?categoryId=1&search=LAB9&fuzzySearch=false
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+assert {
+  res.status: eq 200
+}

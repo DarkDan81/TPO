@@ -1,0 +1,15 @@
+meta {
+  name: Удаление комментария без авторизации
+  type: http
+  seq: 26
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/pages/9/comments/{{commentAId}}
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 401
+}

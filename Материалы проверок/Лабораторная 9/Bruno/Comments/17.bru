@@ -1,0 +1,19 @@
+meta {
+  name: Список комментариев
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{baseUrl}}/api/v1/pages/9/comments
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+assert {
+  res.status: eq 200
+}

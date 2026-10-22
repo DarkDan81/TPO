@@ -1,0 +1,19 @@
+meta {
+  name: Несуществующая статья
+  type: http
+  seq: 29
+}
+
+get {
+  url: {{baseUrl}}/api/v1/pages/2147483647
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+assert {
+  res.status: eq 404
+}

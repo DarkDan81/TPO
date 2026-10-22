@@ -1,0 +1,23 @@
+meta {
+  name: Изменение комментария
+  type: http
+  seq: 21
+}
+
+put {
+  url: {{baseUrl}}/api/v1/pages/9/comments/{{commentAId}}
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenA}}
+}
+
+body:json {
+  "LAB9-A-изменено"
+}
+
+assert {
+  res.status: eq 200
+}

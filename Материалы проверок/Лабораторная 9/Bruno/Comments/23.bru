@@ -1,0 +1,23 @@
+meta {
+  name: IDOR: B изменяет комментарий A
+  type: http
+  seq: 23
+}
+
+put {
+  url: {{baseUrl}}/api/v1/pages/9/comments/{{commentAId}}
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tokenB}}
+}
+
+body:json {
+  "LAB9-IDOR-B"
+}
+
+assert {
+  res.status: eq 403
+}

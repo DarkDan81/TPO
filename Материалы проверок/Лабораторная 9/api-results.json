@@ -1,0 +1,667 @@
+{
+  "date": "2026-10-22T11:40:35.329287",
+  "baseUrl": "http://127.0.0.1:8080",
+  "version": "1.0.0",
+  "articleId": 9,
+  "rows": [
+    {
+      "id": "API9-01",
+      "name": "Список статей",
+      "kind": "Позитивный",
+      "method": "GET",
+      "path": "/api/v1/pages",
+      "request": null,
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": {
+        "pages": [
+          {
+            "id": 2,
+            "title": "Home",
+            "content": "Welcome to our website",
+            "categoryId": null,
+            "categoryName": null,
+            "keywords": [],
+            "userId": 0,
+            "displayName": null,
+            "isIndexed": false
+          },
+          {
+            "id": 3,
+            "title": "About",
+            "content": "Learn more about us",
+            "categoryId": null,
+            "categoryName": null,
+            "keywords": [],
+            "userId": 0,
+            "displayName": null,
+            "isIndexed": false
+          },
+          {
+            "id": 4,
+            "title": "Contact",
+            "content": "Get in touch with us",
+            "categoryId": null,
+            "categoryName": null,
+            "keywords": [],
+            "userId": 0,
+            "displayName": null,
+            "isIndexed": false
+          },
+          {
+            "id": 9,
+            "title": "LAB9 Проверка API",
+            "content": "Учебная статья команды для проверки статей и комментариев.",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [
+              "LAB9"
+            ],
+            "userId": 5,
+            "displayName": "Команда A",
+            "isIndexed": false
+          }
+        ],
+        "total": 4
+      },
+      "ms": 54.93
+    },
+    {
+      "id": "API9-02",
+      "name": "Список статей без авторизации",
+      "kind": "Негативный",
+      "method": "GET",
+      "path": "/api/v1/pages",
+      "request": null,
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-3d1de0b1f54381d1b478f4d25ed259b0-4a3cf3c9f5b10bbe-00"
+      },
+      "ms": 9.55
+    },
+    {
+      "id": "API9-03",
+      "name": "Чтение статьи",
+      "kind": "Позитивный",
+      "method": "GET",
+      "path": "/api/v1/pages/9",
+      "request": null,
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": {
+        "id": 9,
+        "title": "LAB9 Проверка API",
+        "content": "Учебная статья команды для проверки статей и комментариев.",
+        "categoryId": 1,
+        "categoryName": null,
+        "keywords": [
+          "LAB9"
+        ],
+        "userId": 5,
+        "displayName": "Команда A",
+        "isIndexed": false
+      },
+      "ms": 6.88
+    },
+    {
+      "id": "API9-04",
+      "name": "Чтение статьи без авторизации",
+      "kind": "Негативный",
+      "method": "GET",
+      "path": "/api/v1/pages/9",
+      "request": null,
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-75902e114b7061169e7e875e1f0cf7d5-2c5dd853059d2740-00"
+      },
+      "ms": 1.94
+    },
+    {
+      "id": "API9-05",
+      "name": "Свои статьи",
+      "kind": "Позитивный",
+      "method": "GET",
+      "path": "/api/v1/pages/my",
+      "request": null,
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": {
+        "pages": [
+          {
+            "id": 9,
+            "title": "LAB9 Проверка API",
+            "content": "Учебная статья команды для проверки статей и комментариев.",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [
+              "LAB9"
+            ],
+            "userId": 5,
+            "displayName": "Команда A",
+            "isIndexed": false
+          }
+        ],
+        "total": 1
+      },
+      "ms": 7.18
+    },
+    {
+      "id": "API9-06",
+      "name": "Свои статьи без авторизации",
+      "kind": "Негативный",
+      "method": "GET",
+      "path": "/api/v1/pages/my",
+      "request": null,
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-e345e62b10ed4640d0ac6a281ae31951-c914bea4ac459fb2-00"
+      },
+      "ms": 1.07
+    },
+    {
+      "id": "API9-07",
+      "name": "Поиск статьи",
+      "kind": "Позитивный",
+      "method": "GET",
+      "path": "/api/v1/pages/search?categoryId=1&search=LAB9&fuzzySearch=false",
+      "request": null,
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": {
+        "pages": [
+          {
+            "id": 9,
+            "title": "LAB9 Проверка API",
+            "content": "Учебная статья команды для проверки статей и комментариев.",
+            "categoryId": 1,
+            "categoryName": null,
+            "keywords": [
+              "LAB9"
+            ],
+            "userId": 5,
+            "displayName": "Команда A",
+            "isIndexed": false
+          }
+        ],
+        "total": 1
+      },
+      "ms": 13.22
+    },
+    {
+      "id": "API9-08",
+      "name": "Поиск статьи без авторизации",
+      "kind": "Негативный",
+      "method": "GET",
+      "path": "/api/v1/pages/search?categoryId=1&search=LAB9&fuzzySearch=false",
+      "request": null,
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-88c7afa41a4b15b63abc7468638c1e59-12e71926df11165a-00"
+      },
+      "ms": 25.41
+    },
+    {
+      "id": "API9-09",
+      "name": "Создание статьи",
+      "kind": "Позитивный",
+      "method": "POST",
+      "path": "/api/v1/pages/new",
+      "request": {
+        "id": 0,
+        "userId": 0,
+        "title": "LAB9 Временная статья",
+        "content": "Проверка CRUD",
+        "categoryId": 1
+      },
+      "expected": 201,
+      "actual": 201,
+      "passed": true,
+      "response": {
+        "id": 12,
+        "title": "LAB9 Временная статья",
+        "content": "Проверка CRUD",
+        "categoryId": 1,
+        "categoryName": null,
+        "keywords": [],
+        "userId": 5,
+        "displayName": "Команда A",
+        "isIndexed": false
+      },
+      "ms": 3.17
+    },
+    {
+      "id": "API9-10",
+      "name": "Создание статьи без авторизации",
+      "kind": "Негативный",
+      "method": "POST",
+      "path": "/api/v1/pages/new",
+      "request": {
+        "id": 0,
+        "userId": 0,
+        "title": "LAB9 Временная статья",
+        "content": "Проверка CRUD",
+        "categoryId": 1
+      },
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-4d2616948d1b2277089e303494ffa5f3-2e6a0936eb19381f-00"
+      },
+      "ms": 1.36
+    },
+    {
+      "id": "API9-11",
+      "name": "Изменение статьи",
+      "kind": "Позитивный",
+      "method": "PUT",
+      "path": "/api/v1/pages/12",
+      "request": {
+        "id": 12,
+        "userId": 5,
+        "title": "LAB9 Изменено",
+        "content": "Новый текст",
+        "categoryId": 1
+      },
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": {
+        "id": 12,
+        "title": "LAB9 Изменено",
+        "content": "Новый текст",
+        "categoryId": 1,
+        "categoryName": null,
+        "keywords": [],
+        "userId": 5,
+        "displayName": "Команда A",
+        "isIndexed": false
+      },
+      "ms": 7.84
+    },
+    {
+      "id": "API9-12",
+      "name": "Изменение статьи без авторизации",
+      "kind": "Негативный",
+      "method": "PUT",
+      "path": "/api/v1/pages/12",
+      "request": {
+        "id": 12,
+        "userId": 5,
+        "title": "LAB9 Изменено",
+        "content": "Новый текст",
+        "categoryId": 1
+      },
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-8ee261c3bfcd1e5354968dceca02c837-bd5d05c83aee9c83-00"
+      },
+      "ms": 1.07
+    },
+    {
+      "id": "API9-13",
+      "name": "Добавление тега",
+      "kind": "Позитивный",
+      "method": "POST",
+      "path": "/api/v1/pages/12/keywords",
+      "request": "lab9-tag",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": {
+        "id": 13,
+        "text": "lab9-tag",
+        "usageCount": 0
+      },
+      "ms": 9.41
+    },
+    {
+      "id": "API9-14",
+      "name": "Добавление тега без авторизации",
+      "kind": "Негативный",
+      "method": "POST",
+      "path": "/api/v1/pages/12/keywords",
+      "request": "lab9-tag",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-c3e918cd788a1d4bb09bf4265260ef5a-d81406f6d786b578-00"
+      },
+      "ms": 1.71
+    },
+    {
+      "id": "API9-15",
+      "name": "Удаление тега",
+      "kind": "Позитивный",
+      "method": "DELETE",
+      "path": "/api/v1/pages/12/keywords",
+      "request": "lab9-tag",
+      "expected": 204,
+      "actual": 204,
+      "passed": true,
+      "response": null,
+      "ms": 8.13
+    },
+    {
+      "id": "API9-16",
+      "name": "Удаление тега без авторизации",
+      "kind": "Негативный",
+      "method": "DELETE",
+      "path": "/api/v1/pages/12/keywords",
+      "request": "lab9-tag",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-5dfaf5166cdaf871d56702c2a814c027-ce38bf81b113b755-00"
+      },
+      "ms": 1.28
+    },
+    {
+      "id": "API9-17",
+      "name": "Список комментариев",
+      "kind": "Позитивный",
+      "method": "GET",
+      "path": "/api/v1/pages/9/comments",
+      "request": null,
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": [],
+      "ms": 7.87
+    },
+    {
+      "id": "API9-18",
+      "name": "Список комментариев без авторизации",
+      "kind": "Негативный",
+      "method": "GET",
+      "path": "/api/v1/pages/9/comments",
+      "request": null,
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-7fb252d7de02245b849fe3059b4ad0e7-4f028375f546952f-00"
+      },
+      "ms": 1.69
+    },
+    {
+      "id": "API9-19",
+      "name": "Создание комментария",
+      "kind": "Позитивный",
+      "method": "POST",
+      "path": "/api/v1/pages/9/comments",
+      "request": "LAB9-A-команда",
+      "expected": 201,
+      "actual": 201,
+      "passed": true,
+      "response": {
+        "id": 15,
+        "text": "LAB9-A-команда",
+        "userId": 5,
+        "createdAt": "2026-10-22T08:40:35.2829516Z",
+        "userName": null
+      },
+      "ms": 14.4
+    },
+    {
+      "id": "API9-20",
+      "name": "Создание комментария без авторизации",
+      "kind": "Негативный",
+      "method": "POST",
+      "path": "/api/v1/pages/9/comments",
+      "request": "LAB9-A-команда",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-00b8c47b5d340663249e20b7af7d967f-cf5af31ee0e074f0-00"
+      },
+      "ms": 1.64
+    },
+    {
+      "id": "API9-21",
+      "name": "Изменение комментария",
+      "kind": "Позитивный",
+      "method": "PUT",
+      "path": "/api/v1/pages/9/comments/15",
+      "request": "LAB9-A-изменено",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": {
+        "id": 15,
+        "text": "LAB9-A-изменено",
+        "userId": 5,
+        "createdAt": "2026-10-22T08:40:35.2829516Z",
+        "userName": null
+      },
+      "ms": 7.77
+    },
+    {
+      "id": "API9-22",
+      "name": "Изменение комментария без авторизации",
+      "kind": "Негативный",
+      "method": "PUT",
+      "path": "/api/v1/pages/9/comments/15",
+      "request": "LAB9-A-изменено",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-162f8da0717b98258976bde93c6a761e-75355177804b7545-00"
+      },
+      "ms": 1.22
+    },
+    {
+      "id": "API9-23",
+      "name": "IDOR: B изменяет комментарий A",
+      "kind": "Проверка прав",
+      "method": "PUT",
+      "path": "/api/v1/pages/9/comments/15",
+      "request": "LAB9-IDOR-B",
+      "expected": 403,
+      "actual": 403,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.4",
+        "title": "Forbidden",
+        "status": 403,
+        "traceId": "00-44068f542d0b09b90ad8cacab3eac16b-25cfe0e1c00cd045-00"
+      },
+      "ms": 3.96
+    },
+    {
+      "id": "API9-24",
+      "name": "Комментарий после IDOR-проверки",
+      "kind": "Позитивный",
+      "method": "GET",
+      "path": "/api/v1/pages/9/comments",
+      "request": null,
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "response": [
+        {
+          "id": 15,
+          "text": "LAB9-A-изменено",
+          "userId": 5,
+          "createdAt": "2026-10-22T08:40:35.2829516Z",
+          "userName": null
+        }
+      ],
+      "ms": 1.92
+    },
+    {
+      "id": "API9-25",
+      "name": "Удаление комментария",
+      "kind": "Позитивный",
+      "method": "DELETE",
+      "path": "/api/v1/pages/9/comments/15",
+      "request": null,
+      "expected": 204,
+      "actual": 204,
+      "passed": true,
+      "response": null,
+      "ms": 7.93
+    },
+    {
+      "id": "API9-26",
+      "name": "Удаление комментария без авторизации",
+      "kind": "Негативный",
+      "method": "DELETE",
+      "path": "/api/v1/pages/9/comments/15",
+      "request": null,
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-b9ee44b40a9257b7a61950e8132ff54d-11270da8d37860ea-00"
+      },
+      "ms": 1.36
+    },
+    {
+      "id": "API9-27",
+      "name": "Удаление статьи",
+      "kind": "Позитивный",
+      "method": "DELETE",
+      "path": "/api/v1/pages/12",
+      "request": null,
+      "expected": 204,
+      "actual": 204,
+      "passed": true,
+      "response": null,
+      "ms": 7.6
+    },
+    {
+      "id": "API9-28",
+      "name": "Удаление статьи без авторизации",
+      "kind": "Негативный",
+      "method": "DELETE",
+      "path": "/api/v1/pages/12",
+      "request": null,
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2",
+        "title": "Unauthorized",
+        "status": 401,
+        "traceId": "00-7b7d1b3099d14d43995c0b610fe79cab-ab0eeb92ea12073e-00"
+      },
+      "ms": 1.24
+    },
+    {
+      "id": "API9-29",
+      "name": "Несуществующая статья",
+      "kind": "Негативный",
+      "method": "GET",
+      "path": "/api/v1/pages/2147483647",
+      "request": null,
+      "expected": 404,
+      "actual": 404,
+      "passed": true,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.5",
+        "title": "Not Found",
+        "status": 404,
+        "traceId": "00-c82e1a90f3d28254580749c61972f6b7-d0144ca934291b57-00"
+      },
+      "ms": 2.52
+    },
+    {
+      "id": "API9-30",
+      "name": "Пустой комментарий",
+      "kind": "Негативный",
+      "method": "POST",
+      "path": "/api/v1/pages/9/comments",
+      "request": "   ",
+      "expected": 400,
+      "actual": 400,
+      "passed": true,
+      "response": "Comment text cannot be empty",
+      "ms": 1.45
+    },
+    {
+      "id": "API9-31",
+      "name": "Создание по Swagger без необязательных id и userId",
+      "kind": "Контракт",
+      "method": "POST",
+      "path": "/api/v1/pages/new",
+      "request": {
+        "title": "LAB9 Контракт",
+        "content": "Текст",
+        "categoryId": 1
+      },
+      "expected": 201,
+      "actual": 400,
+      "passed": false,
+      "response": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "One or more validation errors occurred.",
+        "status": 400,
+        "errors": {
+          "$": [
+            "JSON deserialization for type 'edu.testing.api.Models.Dtos.PageDto' was missing required properties including: 'id', 'userId'."
+          ],
+          "pageDto": [
+            "The pageDto field is required."
+          ]
+        },
+        "traceId": "00-b242b25d9b3a646fde88488cdbb1effd-b9910b3a7197129a-00"
+      },
+      "ms": 1.21
+    }
+  ]
+}
